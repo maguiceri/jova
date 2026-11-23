@@ -102,8 +102,14 @@ nav.main a:hover,nav.main a[aria-current="page"]{border-color:currentColor}
 .ap-head .kicker{display:block;margin-bottom:.7rem}
 .ap-card{position:absolute;left:0;top:0;text-decoration:none;transform-style:preserve-3d;will-change:transform;opacity:0;pointer-events:none;z-index:3}
 .ap-card>div{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;border-radius:2px;overflow:hidden}
-.ap-card .front{inset:auto;left:50%;top:50%;width:var(--s);height:var(--s);margin:calc(var(--s) / -2) 0 0 calc(var(--s) / -2);background-size:800% 500%;box-shadow:0 14px 26px -16px rgba(31,50,84,.55)}
-/* reverso de cada carta: una placa pequeña, borde de azulejos del color de cada espacio y centro marfil con doble filete */
+.ap-card .front{inset:auto;left:50%;top:50%;width:var(--s);height:var(--s);margin:calc(var(--s) / -2) 0 0 calc(var(--s) / -2);background-size:800% 500%;transition:box-shadow .5s,border-radius .5s}
+.ap-card .front::after{content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;opacity:0;transition:opacity .5s;
+  background:radial-gradient(120% 80% at 18% 8%,rgba(255,255,255,.55),rgba(255,255,255,0) 45%),linear-gradient(160deg,rgba(255,255,255,0) 55%,rgba(20,24,40,.1))}
+/* al empezar a deslizar: azulejo recortado entero, con relieve de esmalte */
+.ap-card.lifted .front{background-image:var(--clean)!important;background-size:100% 100%;background-position:center!important;border-radius:5px;
+  box-shadow:inset 0 3px 2px rgba(255,255,255,.9),inset 3px 0 3px rgba(255,255,255,.55),inset 0 -5px 9px rgba(20,24,40,.25),inset -4px 0 8px rgba(20,24,40,.14),
+    0 1px 0 1px rgba(255,255,255,.5),0 3px 0 rgba(150,140,128,.9),0 5px 2px rgba(20,24,40,.18),0 26px 34px -18px rgba(20,24,40,.6)}
+.ap-card.lifted .front::after{opacity:1}
 .ap-card .back{transform:rotateY(180deg);background:var(--tile) 0 0/var(--tx,72px) var(--ty,72px);padding:calc(var(--ty,72px) / 2) calc(var(--tx,72px) / 2);box-shadow:0 34px 60px -34px rgba(20,24,40,.7),inset 0 0 0 1px rgba(31,50,84,.15)}
 .ap-card .core{position:relative;height:100%;background:var(--linen);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:.55rem;padding:1.4rem 1rem;box-shadow:0 0 0 1px rgba(31,50,84,.12),0 6px 16px -8px rgba(20,24,40,.5)}
 .ap-card .core::before,.ap-card .core::after{content:"";position:absolute;pointer-events:none;border:2px solid var(--c);inset:7px;border-radius:2px}
@@ -706,7 +712,9 @@ let rsz;addEventListener('resize',()=>{clearTimeout(rsz);rsz=setTimeout(()=>armC
   const IW=1300,IH=804,C=8,R=5,CW=IW/C,CH=IH/R;          // placa.jpg: 8 x 5 azulejos, el logo ocupa las 6 x 3 del centro
   const cards=[...stage.querySelectorAll('.ap-card')];
   const CHOSEN=[[4,1],[4,4],[4,6]];                       // azulejos de la placa que se vuelven Healthcare, Skincare, Farmacia
-  cards.forEach((c,k)=>{const [r,cc]=CHOSEN[k];c.querySelector('.front').style.backgroundPosition=`${cc/(C-1)*100}% ${r/(R-1)*100}%`;});
+  // cada carta muestra un azulejo de la placa recortado entero (flor, arco, arco)
+  // en reposo muestran su pedazo exacto de la placa; al deslizar pasan al azulejo recortado con relieve
+  cards.forEach((c,k)=>{const fr=c.querySelector('.front'),[r,cc]=CHOSEN[k];fr.style.backgroundPosition=`${cc/(C-1)*100}% ${r/(R-1)*100}%`;fr.style.setProperty('--clean',`url(img/tile-${['flor','arco','arco'][k]}.jpg)`);});
   cards.forEach(c=>c.addEventListener('focus',()=>{const r=ap.getBoundingClientRect();if(r.top>-(ap.offsetHeight-innerHeight)*.8)scrollTo({top:scrollY+r.top+ap.offsetHeight-innerHeight,behavior:reduce?'auto':'smooth'});}));
   const cl=(v,a=0,b=1)=>Math.min(b,Math.max(a,v)),ss=(a,b,v)=>{v=cl((v-a)/(b-a));return v*v*(3-2*v)},lerp=(a,b,t)=>a+(b-a)*t,ease=v=>1-Math.pow(1-cl(v),3),
         back=v=>{v=cl(v);const k=1.6;return 1+(k+1)*Math.pow(v-1,3)+k*Math.pow(v-1,2);};
@@ -779,7 +787,7 @@ let rsz;addEventListener('resize',()=>{clearTimeout(rsz);rsz=setTimeout(()=>armC
       st.width=cw+'px';st.height=ch+'px';st.setProperty('--s',lerp(w,Math.min(g.w,g.h)*.9,m)+'px');
       {const tz=vw<720?30:42,nx=Math.max(4,Math.round(g.w/tz)),ny=Math.max(3,Math.round(g.h/tz));st.setProperty('--tx',g.w/nx*2+'px');st.setProperty('--ty',g.h/ny*2+'px');}
       st.transform=`translate3d(${X}px,${Y}px,0) rotateY(${fl*180}deg) ${fromCam}`;
-      st.opacity=cl(iin*3);st.zIndex=m>0?5:1;st.pointerEvents=fl>.9?'auto':'none';
+      st.opacity=cl(iin*3);st.zIndex=m>0?5:1;it.el.classList.toggle('lifted',p>.015);st.pointerEvents=fl>.9?'auto':'none';
     }
   }
   requestAnimationFrame(frame);
