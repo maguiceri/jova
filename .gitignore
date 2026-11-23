@@ -1,0 +1,5 @@
+# originales comprimidos (su contenido está en assets-src/)
+*.zip
+.DS_Store
+.shot.html
+.vshot.html

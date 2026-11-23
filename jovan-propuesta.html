@@ -1,0 +1,936 @@
+<meta charset="utf-8">
+<title>JOVAN · Propuesta web</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap">
+<style>
+/* Cinzel (Fontsource, OFL) incrustada: la versión de Google Fonts deja la Ñ en blanco */
+@font-face{font-family:"Cinzel JOVAN";font-weight:400 700;font-display:swap;src:url(data:font/woff2;base64,d09GMgABAAAAADkIABAAAAAAglQAADilAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGoFKG8EqHHIGYD9TVEFUHACEVBEICoGkIIGDdwuDSAABNgIkA4cKBCAFhA4HhHkMBxtGb7MREWMcgDFwbhNRSQqY/d8O6BgwAPcjVgWVpAqjgNCgdJ3s5BlGk2zihuOOQhC4sfW2OThpSPuKT+LcN1P94n/mle+pC+2lNo2tjtDYJ7kElR389+zdA+UPRlIsV055j/g5+3kv+jZKIKKEAMFCSIJZxLBAgiRYgeJSapQrNaFuJ1WDmlC/tidOe2Y9/Se/V+h/Knr6/0lW3IANmQpdMgS6deyyj8fjyyD32t75CblM2SUYLAoHCUFiLCiJMOY+hbC7DVWNqhIT/79z1UoPp85ZIHXvFBMXhiElTto/3ZQL4P8op7ljKMxIhwLDXQno8RLYVpwNO47KoP1qvzYnbDynHIIyJg3YiRl6aq1BpfOEwhBCpf7Vu+y6e6IvpittXU19fXKsbUfbjvqihluCm4An/DqhU5I1cXud+PSmau1/f3eZJNlcaTiknSEPHUMv5QshF2X+2L8E92OxRmACsASjEwwFQpTHpCNWBDgARDlQmjlKl6NjdYEinRhuhpRTDOV1IZaxjUXlovRcddd1KdfXXdHU11RntkxZCUxy42gySkIoobLs6bP91nfjtUZvrA+2vbHtkhIkyEOChOCNn7H57RHuZ54rPiJiTFAwYHm56xMSQF0pkShglyBUDEPFsFQMh91VPqEpKxFKUjEqFROmYiL2iImmg0lQMUl7xKRIhTGrGKuKsasYJyPVxa16+UQZVEyFiqlRMbUMaqMmtUWr6IaK6VUxA8AuC6gqhAE+/ktuEbC3/+jrADYywN6OsO1XTwfQwZdNkOFXFd70QwjeqDaQQZM3YTYYaYFrog/tDsyneGsBM5qKVzNGBvucR69+py0qOTmsLfJPMAWA+lEeAEyAedWySfReJYMr5mPjYCxWxlNWwCJTEueePkuikhccO+hoEQT2ICU7Ml5Ok/1sozE4IRmz6FKGOK0svbKtLSpN0wa175kBEpdoD8GRVnjhDDt00jhS6YOWEbwB37wk+e+GzWT5mpxeM8KVffPDtrMczbec+eVP/IHb+QmA5xf/LQGUnfbSbyg1b4mJUbL+5rp4gPMJeRzeukl+e/+jWFhz10uW7+9BbRCazcPMVTNOPnKjc8w0VgLm1OmxV3zPPsdwkb+N9Gj1R0xU5KxUjS3d1CbETzzM8vh8eAVeeh5ef/exPSDvPZ5jy7naTBWta92jkeSNp8Fr04xbRTOEPfOGdW8kw2HIDQ3p+TObmi0LWeDuad/K8mAWD7xUR+LkqwbKrzNPemGaVsn16g9/7yePYQeoO/+IwoInZLFwE7PkdmYv3mtzqJFUmKZnbAM3nbOAuuDX55Mj5lkD/3ov+VuxeSqW3re3TI+fWx0ah/DhywoERvATp/wTOlelE9PSrq19qW/AC0EdfWZesg0uRctDPjF1CBI/vssSfpXVeK5Wak3p1cfuyLuJVkqvn5GKRLQFnL/BhiltPpKHrv4Kqo61KfrJvWZ6/FjEvK21b4XEhR8+LEQ+j+Qft2UZLuaq0HaXRiDZHPPaj9TiL0Kk2zP2v7zBTNzTv8zVp40W93oFnvGpyJ+agVNmJpbNi4Pqc7y3va5h9Guug4LNFP+Z/9TF4wOIvNX43NfJR36XtblTpTKw+xi1rMYezMxTdALH8UoackN99of4NPT/HTMtmJWvsbjI993okL7c3i1ldcbbySoDdzpuY3/gEh60VSUWvda/Og2Jl640nmhXFMtrGce+VWH7mDfj0Fty5gOYb6+dvPNuwfT0PFnaBsuvOGb5Q4T/cdBsFLqow8Dbvm1Wa8jgjxadqKsrTqdwzNu8JIOxebqlk2z5YNWVl2L3UvRKW+bU9BNKtZLaYt+b7Dlhc9ymjFgdPX4apErRPi7Zo9nq/FTTDRmuZhcDoB7p2p8/8BdrWqB6wHxRYBaes1r2hvFrbSY9A19WiYaeMeWYlsHVoY5H6cffUFmrVXhOVXzK+SQjOj7qztYxDBb8js/sl3V/OvbaswWGRID42CQaX1pC9EU+nqPPtlO1rLlKWBykHdHZdDZdim5TWAZ6dppb6pypTjMzz1xhV+0z37QYd8DDbK5BaDbtGZpMxl2ZMsqNHBbtzWC5pflvzWlQq5TZmYsfUB7gnQV2/S/KN1Ns32u/n/z+EsVq4F9d7ic5/fpKYBWUXMzb+77w/CtbmH8jCUh6L85Pe7Oy+pJCMg8Kki+nH+eHzMpm3WdCS+znueT8P/sShdjzRjkzsoc5hRqS9DTsftWleqKPB7WQY50JSjsLaUUf9Q9rtOqv2t7fVi0pc43ktAZ7u4/z07n5Pw5WbVW03/Oz939H4TQiSVizw5wNZZnlZy+rjuklr397tkCypk5x5G8XsLzfZb8KU4UNETDDwOVWGrbGGiM22GSe3Y5Y6Kyz1rnggvUuu2yDz0zaCIOZRF2rONKb4kDKJX2RgqBaFweJPIVLGbgotEMZOjm/l4TQVAz5TTEgXpwMM0NjRIqJOZE9pYKFcn/ETqME0OB/mxKLFiZShBDBlMIFUruItMQDheoXURMvSQGUhraQaBvjYdNL4oHcpm+ep4XhvQnSDtpk0dI5kup1Pm2tzh2oMcQAy4dht8OEcw9ko6FM1vGnFzC/uAzdRWHAB6mQ8pZiKeA7jMIUgjM7KU6RJEUjQbgoF0I7TSeSQfxtSiVTojSp4sXRSBYpwYXZpSucPC9cf/kjotVibQdSbmMCfvSSBCC33ZvnaWH4eiUhMH8iAwevoeAafDY8CwoH3ySjQlwFbZdy0WPo0fTw2E4KDz6sPMJDW4aXiPTNru7oVuDFFq1ne8/BNa0shfkElzvz0mj3goKJ/5N+6PNnW5nbGS/r095B+XiP73hrV3S4Hcwctk2durT4Js/zMUXfTfUL6+826Qc4PxgE1BAIUYkkpxFDLZ5FJLtayRoM8JpppiazDWm21DKtVlip3ewindax2mWz2m2/2uOI2WtzpX3krfkeXEACGRRQQQMdxMgxyOKFSxApkVJSQLIr9b5JQzoykAkjTDCP3MVPN54eYB+uvoB+GzNkSCMvicLM6A8KGBEcIIEMCqiggQ6CnUcSir9IIqqk60mGK5VEGtKRgUwYYYJ55FICLT3T1Rd68PX6RR/Qf/hJAph1hdeTj5EtoTCKbh22zSEkSwgaQp4iTEgtUAQiRp8ssxS5OJLCAZJJLYQIZEEflS7JKikP9aMW804RCdwkhyW8paUygp1u0BO+C6SrewmmzcIRUoHhwAhgJDAKGA2MAcYCV8FhT1pN9Glag1pFHB27SFKP0CEvkMaCwjjo40SHAoG8T+c0QUfkIRl3irkySwgtRYDpVM9dCB7oIFu4TL0c99ErBeiwQE/I7pKzogLbYYMAdFDNylHQxCIDQwiwAnpgMntEsJpE2Ym31pVUDU/kL5s2yS+QMEe0uWJTFMAC25DCFhZHYu7SEKtFAzg4mS1wS3FtphYB5f9jCTjgwg88+CMAAgghghgSSCGHAkpEIgrRsMAOJ7KQjRzkIg/5KIAbHhSiCMXwwoc61KMRnyUwln7tozS1yYg+YVhDpAooQh8PnzmKbiJjd7OuM4bYOpCpMsyEwsUbLO0nSlywLgb3TQplucqUpPWCCmO+25Sg+vQU3dWvprLp30xFxZ6c6m9hsEsQnzBi+5/atm9m0F9Bd1GthC1TgJzWpiJHhHRJfcA0+OKxkiEad22nQSeeBbT/selagcuUH3zSo9cyULyYvneAKwDxaxoHWsNhhTFMrW/5dOh3Ux+Gx+1AwbZIfJWcjDd3T0pkbDGSDXmFJUwfhb3ZD/vxe4BSolQoVUq1MkVpVfYpDwa1VfFU/FcFaE0nxU5RxbONv1KklM05eXKTABnLSvB/1Zf/ZPEcfHiVJG9FzagTpeezT//s/+TAZP4cRgtM9RgQl4Gp7yL0nLn73GPUBqudcMlVG+20yxKXrbDXGpstt8mYc85b5xoMwsDCEYBPQEhGTiGQMjjFNaJpM3R2gsQtlv8QbLfUDvds8UQqCys7pzwu+QqU8PIpVaZCnQaNmrRo1aVbj14DtrpumzOOWuWYU4477YY73nbTIq8bt8+Ep265YoGF7pt021oPzbfYG0bMNc96VDgyOgoaApM/Lj88UiJiEmxB1IKFCBfqojBx9AxiJYvSLFOadCYZjMxscmXJlqOYR6EiDuWqVZpiqipn1ejUpl2HPvX6Rai1x24HHLQfBsuvuAA+AcTjIHUHjf8BtPoJUFwA0m6AhJLvghxifyHLLg0KBlM9YVViPPAk6KjowlYxSHNZk8JTKfAqzFXZVLSrnFlcBpFDrEf0HJUhjWs+tXHY/YuQYDrWY873URn8MVbwfRwTv+esHkEXc6jiYAL6vpmJCpVw4CZekEVS7tnPAy2bC1n4a3a+K6czSTsHkdk3gzCZHDIik5k0OpKpMSVCqtaQyG6AblI/6VEQRcNC2E9+KmKybP+SFTML9G4EYlDIFMSIBp2CiFsMZm4mC+oorJeXkgF546E3FQnDWSuAiU+QbYDNRpBM5FYOmc2JBpnibITY5LXsi0B9dbVLKDo0tSSEw2yUuWvXyaLTgdIVejigNvmWclNCkfFr9+eQKAUVxs2JxzLHjArYG86tLuoQQ2EwlV0F1giyqE04mU2Q2dyatLs9Msnyukwqk0qOMJmqZDDAXh003en0gPrqo6Id8uoqydzaZCM2k3Bi0LXiZiHdopXSR04v+I12Z0f1TClDV3JAfSWTqajONdm+IqR6TL0WKoUg5CA6QhTy8yAGjcltDHdxr/xZpqzCoCcl+576zph6qeIXcXioJreJGILgQJ6dvj2EflVdWIAsU2CU5o5YcMAUIJknvVzvyitwQeHN2rjnw4gFMUkIArgluZ++4z3qxzCeb6h5EWF6lCngMeXy15hybhr9qoIIRQtvlzTrJDdmUuSyaHcOrzVmc340R+4vOUksgcWf73sIILFqa6EKoHOpoSBFhUDub78EUf2CUCgNKnAykiM5B45ihiGLBr1mrZ6NoxKAguNY4ib7LYDCfnsAllQ2cV+qDl0m73xwzWJQsFSLoJTXjEFKlwoWPp+eypSCHBraKsFTqHjeKKUIBc0Y5PH+X52Uz1vXwUqmK8CVWJMKVp6VnFd88nmqT0lwxPA11jNRQIZTnmU6VtQVXwjEMPyPYVzJdaACmSylxqwg4t7kkIVwkih6qCRARSHKIAmT6yszdb0rdjkcrXP6iTSh2Z9+PRcLUFkUYPOtYdxO47dLsHVhsj+8Nhz2fli+QZXZP6p6AIWJZwouw/AQcprABH1Wcp5FAj1tbY238cpGZPx2Odfzlj0tktUEOmNLJLno2aDLgh5mcNeZDSEvWjMv5XHY1R9zgnhvXIbhb9hvDhHeEQIUmFSeBxi28xgXBL4QC+w5QCde18UISMwxq/uCL7QEawY8VxnxvHNaJgFcn5ma8I2v32Q/oa2/7FM+ZK8Jm++EDr2/hbgY/UBDMUd/q3BZdylMOUaQb0CoLFQzCP/H38fLq6ZxZLzouUfoxkqxrgKSw7yB1YaYlc9G7kDaVKB1NNXGpcvQz2ndoddslsLsF7Qqs9rRqm7+c0fobU+TQfr1s7k/3SbmvVTFSCX74pNPjAuz60D613f3JWdVNY70dzbrNUvHNa0Awr5sS5tuocjrcGDljfY2tlXjIv1EGu5KmhaxHPjxUGQ3OTvEuUA1ZQhj+0kfZyfgBWaMS35yxrMzw1oTxjSAcvs9tngkwHLojkUpsr7uVztDAUqlm/AzRQxBXR5vdIbyluPTdCDNzmq8+3FOp4NtzJo/JQ2rDCfBFw3G7SGhLSbQ4fpbyfA4WK6VZtoJlKitiDP5IMbLHQDC8Fbv1gyO2/UrJqasWW0+XJUha7rTuCGEk5mHvJSJS8iqKpX9GgbPWrnJCEYLlLnPW2ECv9Y0ksJU5bMSm/KTJY35lujCNIKvgCr7m/lzg0Ugbaagd+pX1CpkOpdfxC9iLlPzuMuOL+f2EHohWzGlIXAgdEv+PTROt52VHVQMSDUMQzMpFCSkSSkpA+ZakS/hncp4ZlJI66mUvE5d/ZBPBUGDUHFEXqDfa9xj7iXMIxY5cUSEFoGHjZG6XhDGWBEfNqMyJRzTSZzT1UEjXboyoyKY3rQBMHT643RTrra/SRl53C+/H4AJJqW6JqA5H+HaEY4VyzvuiHmGg1TzIIFa2rfYGJrIHGIaycAxBKaoo/octVzeyFylQ4yDIpwhOERMPoiGapnFoJANv0UbOzOzb6ovO4r3nKoKLxUJiKSMMIIKAzoA5xTNVwXdakECjLfICG0WgowjJfnanXy1OmlN0VzBEFeGuupZVqb2VvARRzSqRPa1m8PPjCwYccoppz1QsfaPmbGIM6jOsraT/gCiAsyRcKt/jnj7rF0OOgkcRQzTzemqIWSBXJkj7VpBDn5PkjbTXQlmKBVX33fQwROQrcA+p/GrMjfUB9NUe+t36QI73K/S461z7aW53BjuDwkeOJmOIOhjl0a2s3HdxsaAdOvG27mVdORE2/TVgdzX7X7yBVQNVBgyO68NhSj1/dK5dZCGKcrrjHWiEU4WRINkXyOnTGkng3MKzo9kQhYZMPdbSW6cJOq9O4CPA9IJJzTUUlJ6trpw5ngMJMmIk+uFzG2ue/DBZDUzUgDU48v6BR3MMqr2aXx8Sgfxzo8f7VeJXWv66/daazNV0D9N1+jFE6QeMBxBHHuDtbVrGMmYxYIIUePOwGPp9jeoCJEcH95MlgKHgU8NApvyH3mxv6/AZpy77N9vfn8HvUimpNrTqH7JfTeKzoCuuhRDfn5ClaGZTXQ0GHpur+mtDvIt67hSQv7bJGC26WG8xxQxPNcxgr4+0spsVNLgb+1YJsVC5xAyBnRDxb90L80k/1H8MHPUHJNq1ZBhqtriQVZvhAvyDZR1CJG7bnd9CoIUTLC0/L2pj00ziapyNuvDw1+D124h8l996/dF8ezgl8DO5zpq1HuCVRQ+hHsJ/+P2Oar3LkIVlecItfxYA2cRvNG/yQMMAUSx5BVT0yqNgGkEz5Hyny9yYg6I65Vbe4AwMJkWd4/3LIiMWizJfjlfjsbomrXJeXSa57ks5qyaTBTkop6d2UoKNaGvHdemjb3+VN78vomthlB40ecd5H/xHucq80Hbusl9WL/Ccm62H9Wecdx7rTvwLsc+Zz1nPO5auq5pFRYMME1efGDGLXU6wYVGqvLTVLvd66vf7XLR68lyV6tJvZZb7W8n69bq1nVGN583KkrDDgEIaAAWOzvo5CjDYxNZ67PJzqLHaQh9cXlMgVGHeLaHQ/xT7W0IUHx1t5coSfWkdqFKN/PDw/YkaCDFvGDN+OqIERb1t9+Ok66qjZTZLxO1ZG/vM/cfyGi4Ek+Iu4H135PPWHBX3E+pjAn6D04/xFSmeFXnCK5QjfW1hXDx9jZWr2mnS+csfLx/rxYS5RF026gEBlRDvpN2Wht6udVZydNK9mCZZGzOvzyGng6fXt/Jlo/QjbwUODErFs+CX4Tgxh3wt5Cg/5dQk7Y/FWZHxwED3Pw+LEQHjV2bY8OD606zU9EqDasmE0rKs03HNaznnRYczbZ0V2eZXrwhvNTspObp669fbyVzelmuv9dkW82hpy/t8NIKSGj5BQw6mVju3qH7vEMq2/axaN1Dqv2A6BHV5jfVHYc0SbCb7RsmxaXc5N5YyOa7ZYsPR4kgpYQwKEx48/yKwookDunc+/Z9nqBHbxIWLlS/UE61Rtyfk9XzlHF28twJW8IvWa1uiMAG+fCVvJaGPYwbr47/KB3KfWdYJh3ubtjEfeunL1x2TD2n7OO0TalMSSjG+Qfl4nz9a1Ae/79xe7yQoqXiJxSeij+BzsRTmeLas+Y0NrevQWCUjcD4+cLI5Q8y1uadZCey9Hp4qMlHptSJxwpcYrLG2rAXHgpR5Ub4tnNs+jq/dSh0Tj++lGy3t69tn2/NazMJeUlaoxRxFS4cw/eFvsMNZBWbuqX/rDRdK2SetQ7TvvMqPtz0jy61+E89v4S2UFjnjkN/urt7fbKUrC6yOVxRTnR9orFRXx+9NcK7FDP+DzzIjnhDyGdIPmN5r71GXQE/NekKSyVZc9vuMuREAtOj9ZhCDjSPMRJMeVnMcboIXYrgxdLj9lIOdQ/dK/WjJmya74V4CMmfE87lE3ig8AXFuy0csGB4KPgc+Xot2roGYwF6ajQG9QrkQjICbJ9kuGvFguFvMJrmCsS5PB6zoK2XOwFR/0rG58ZPCmwk6jLcYeB2xVt8PEkry3qZ1xmGwKgIV6OJZrUjfg0hwM3hA/B7VzEUr9XN4/2cVgou7OyE17S0ua9l2/8JIXrXyMO8WfX729vy+l2i2D8svSNZRVKO/o1hbZ9SpcYOyMkyZ5u9PEQcsvl3M7tPhqUTYtqX3943W1sPHX26ZzxpCd4fUw4T6GReKxgW+J2uLiUtdO0rHFkOnbttqkuGryN9MshlQGQm241PDvLB+vHmcpxsHb5879X10pam+vVQxAUYpyeq/fU+Cyb/FUzZH6QE2LhGCMD1dTBTe0Y2xbP6juNyS+ZUprx3OP9Vobg3XTROVdjV28Pta2U4WAAsRS2jM9rBMOrNciuKeknL6HG6QgF7heewY5KfOn0vUMaPyg1dqddMaqDuruFG/6e2U3jtlg4mge4jIAiZv/jPpZX83W0CH3bnyxPE4psqg6porPsXphDoEFQl4NGm0gnDtZdkOQUYJp1yyVyuT5QRKw0NUSrCQkPDWOzQfP+lYvESf/8l59/PS2GTZUWEjo3QQwR0In/6h33jlSuwwpQMAggB9/AWQbBf8Ofpqu9NfmXBts/7unP2Lhp6l0NGV+Wx27Y8z3Rb7BV78hBLwpOQbM15dnzUX8yK/9mDWNI6GSlLLx9EAspC2Dw27GgIS8iO17Djbia4YiPy41JSijujXa1AqgelBntwqCMuLtR80skOJoSpP96Ojvnvp+gmzGiyjVeO4z1ZBQROYJIiCR5BCgJrHhUFMBFM3rUo19ga6miHN32Vu7s6Kna/WdqXOz1kP2s9ISyf6/OWzCywrK6rNa8Z9BRgWb2xOQPMOhgd69xTXL6tpaV8656Szk8xpDemqME9Lc+0vLratHxanhvC003xSJVU7M4RsEishApMo8V32FX2yo7OPcW+bS0tvkzwCTKJB2aYqWeuccWEtShQ8LOx8dXUtLFHGPylXfWViucO9g/OZ8QfOWqIs6k++7tqUy5iif0luK05V7ODMRO+rkDcwMUvcE/A9Pe8oXq4cjzT+ky3utV82Z3J292D2DKrjJR9nJKekk7kiXBfe2HqgNrVCntLy3d3dJTv0au6I7GSmyO7wlpPvLS56sIyCme4zWvrp5rWDBQUQEQu3xRWAW9Gx3LRJOLEwbkyidmy9fN81ahqhRopYknNT/RaJRizdk7EJ48FcORJVsxSnQ2vN9d2pmp7P/H3L2hlw/mxi0fnrvi39tOjMDl2XKt0bchR7CLSXVKP5gjuTJvlLNNPN1krA4pLzkyiJLRaKgnzoysSbLKvYMqUqIog3pRRKkEOWpxgxS6zAhDxzuXSbIQxihlYqgs15C9znNVvbUid5VzrB80vLK2ACAS8Fh/x7fF+WZ0I44B0NH0OhuPcFi6HSE+WjRIiZ9pwWtWExh20MDDTt8k30RKnSdtqGebnjUqAC2hnQRItOZ3g+JVxcRym3fE2El3eBqqfoxABDxPHil1yQ2I8QPMc2SO5XuhxueIJB7Sws1XZZiBm+Lq3IeCB2ECQHFsKHTihkgAPg6MTXa+XVuzp6AhMj9PVEXdtP+Xud5vW1NURo5g7fwAxpJ9cneY2MjGmYZaCSZX90nBn/5FLvSsYlp8uw8GJrj2l5YkR03hXx97SssqIUXqy57zl4u3yR7fh8ITk+ppnzwUwhoQm1jt8focKhgntK+04pWh1cjQ8W6u8YLDAsqa+Ts7xoFv1xngp6Wzzxh6x50e76juVwB0sDC7s9sQuf0uCiZ04SmLpYJZN4oU/KcGTsWFntdZQksoOyX3iEhXSBhA8J1l+PhulY4PZ6s5sAKORNYR57KiICSF4aj0GtoTkFzMjhkXg7Ngsb48we5m9POH9orNyh7OmxGhLiBhV7pM8kYfWgOD5b5afz6YqOZjZ6s7I93qFnSztMzszX1CubIo4e3auYJjaG3HGWp5fFjdDsp5bEkZtSGpKbIgM/7RzXzPl6WgyZQADuv5hugvAk7HF0XnCjkBbjDaiJDsxyHvhD2ykqHYysfqqDNl1WaKy8IT5k595QtD6YYTt5I4eYY1HRHPAas5113BDcEwr6fUvXttijHEPB9JTfiduqntJA4TelhyfZDVqKMNrr+6OlNkpmLe7uSbQzng/2ER+Yz5hVudnR2K7cq1J8h27z20rD8zhy6JcHu1Dgl/Gh9az5yrPlZJUXlWJonKUo1z0guTRtWFD3msl8JeRG5u0jfRikZIzWqlfs5DPn47g4dhZp6G1IiXDVJ0YV2+9kXgt39w/y1RUPmK09edfJ6WRBN8LgAvoCwRcqM142v7lwocuDXRw0m70f2sLmkMtoXQbmT78zh976B+MHPrMf4PiqALZL/egG57JNh9udv+HEH+q/WiIYvvjD1DJRX/YvYog+FM/Gxh+Gqk49HneeP/5IlizWoS4Uw9V80yzdwQQaAIBnbBi50Tr0VwV0t8Pq5Njl853XThf27t81lQWsKCvEVtZ+OfdqL+f2Bw77T2kPz2BbMRHwBLwxqPFCJjYaytmd+F/WpRsVPNDZeZE+lLEDrRQbfjyNg8bmAj7z9/syJH+sMQyaK400wctfy5fciJ1+SxOEH3qPF+Ff3bhnfi7hUo24iFgETSVZTq5v8yxr13ImQDCgcvNxKpV81TbAq6FUve6H6h+Xxj01rolN1Nzc7+7++LFIiUXVRZ6dC3yeySrWVzbfvf7HfsPXuLR0VUEdAFjL16qKMWTXMv3f2PnP79C9C4LogZp1rVMjgUAHfoG0f0uwfKUWaEsFh2dQ0AlOPjuObGvXI/9Z4hHGB38Fvh5uEH/Br3DUT3W/6oONnzsDnDOjWo9ySbRd9zRLFs4mmhLDcwdMSFC+JMQz6y2GPHH/zPB0F53IIYYRLhZJ26iy/+Bpd4FgVnIJD+gV/7OPfV5VmSkJVIXZrSo3dyILgAuVEcYZe06Tfh2B1ONJL6JB2qjLTG1B8vPtPrKfLjQ6ETAIHllpPdIopcSYECTYcW/+PI+V2KDIr0JNua4l0yd6l66MafZOEN+jr2aEJTPyivJa7OmzCopTpndasnGsjtirPU0Nwx5G1Y7XAsqK13zVzsb3uc6p+igfeaKWbNmrmgHfV1OUIKvwocLTE4EzBCCAHsXp7KFwIQmyU0VGgln8/dwoWIQk0QbpIVHXl/5fInja5DqfbHqAxVFqqKq0s/rtu7AYn7acK1syMJgCA9LzHhVSo4IGIljHsSSByhIWVpJBxFoQQWqI4UIWCH6mYK9j1N/FGEsQPNUjlLmM0hVH6kIqQqpPkzNZOp2aZF0B0mWGCR7b51EwHVvScgO6ZX8snOOEKe8ElN3Vxio1xYxc0TP2KuJjzKyK1WZ2W2WlCFfcfLsZotDbeO9NxuG8RE+Gz1ErOjwWRWe5G61YyqsznEvrZnqXromB6bVdDiXr8x3TK6aqsr92yTEIooPp3CILTI6lvdnU70kHUcnvyG8bGEQvVq0ExLllQgDTsZF/1GnUv9rhPe8rkHcHVghyad4l24/XwpMxJxiNxGSulRWuKTACs+Bu6DlXqvirYU/C0rxsAACGU+sUUQA04U/Ce+T4+GJ1xWutM3NknQhaZjUoc4jG0nUDAmT+BWxxC4qyQgpFf8L4TdMIgPT893fYX5XTwh3HwGjhh3p94dmCRWRFbEkOxx6n0eg29t95T5srcBZLOCIMFT73QEKEVtYirthBFJdpD59hmM0LKlo9hbve8as5fszQKSYFjP9SRirp+f9cQVe5KGIb1MxzA0I2CQVkR3Mf41sIoUnMyChI12eUlUvfBE0D30Wva60viH1dsZWa3BASpsY2NBGl4HGSyU4Bd9DfUMcjWiLJWgXMnIQ+IHwpSBXwBKAH6BpGc7wbC+wp/8YS7eDg/1tUJIZiKk+liNdzO1J5FBeCgEGhbn12bM0FZ7YHodDmLKanJ01U1PpMbSMGTMezOmxt9szZhcVZ8xCwG7F9jJnFRdlzj4IWgZvc2/h8PqsFcd8ZeoJ99Tzavc+e8wHLxKYmP2n+DWjOQVLa2vk4b4qZ6pH/u9fnLu8LxlyS4M5ZTb4vClDDWaa1VdCKiqK76aZPhYFfRhElqkoqpQx7ZaNz6IvDlwrmWNBDOFhMZ5eZcnAhw8LUdx4AWLJSHKSQytpIuT/wHVvS1Z9RHxOLGHwFEXVY1ICrl31u3srVcNMzbVY3ZBvZNrCIXd4EMbEhN1PCGsN8oAhOhC4FeDyR232qgh9TiwR48mPmoL/Q8Ca1c+2nImKZqY5zZmFYMxnzvSV+jDhShcBDMIRQQj50hIzs4UkwSsDE5pBEw3lIWASvBTCrHrnoKbMcEwZRZzOGS300DMM5vBYmu3ps4uK02dx0GJFeFZxETM8PEyBKZe/t/nnS8uCrNYe/05yraomNutbl7ZVOMLOUe0ujS3Xl4bCDe+M6Bz/wR8iwoLtlph37L985ddjDHNwCsRIl+gQ/i0q2XCvP1R6XYRgVDcafvpceApHkao5PGwcVoJRL68ZF650E/fuSEK2EBhBPJS+q5d8XvduD97CiNqZajAb1JzNvn/PL7oqN5J1sbneyCSVldGvyNSt7mGkBVusIZOXzUnR4sbVJ0fCZWaeRGPOCb1O5xXywFNUXFFsIwXpgmIUbgZL7v8Iz9ZK2gn/646UUKMDYYzRqqKUJAgE48b+XzL+yF/OYrhj5jqu+7cTMOadUTWlzVNW31A2P36ked70/tmLBpvn4fE4/kYAsKHXEXD4n/HH4/vjcQ0Apyf3yOwLBlaWqKr9zleKQUrRJMvy3e/YuS+uoFOKg5d4NHTsDHT8scmVIZvQ8PXVfgQM7uaNF4Xbx3sYhW8dh9FjYoJfPeFHXJlQvPngu1U9e3+B1aM0glu18WX09iXc0P77jUZ+ZPGMhrfmKIAOfYHo3M1wuGR9ccfa4krh1V08YELvIJac9duVf07fYpthdmoH/lwuZyEKAoaA7lNRCJh4r+1qxT+XKZjIAE+ixt/8bxGgmnLZUzt+vDsAGJC9JeccDunz2oR8WgX1nwLLt3WL98t2m/jAhF5BTNnLJ1PwDvyr7+RMBAiDQFX4XTKxsZ6U6l7h3jAZ/OuBMFTRRNRrvUEt/Cc2mql6V9BHM/Vbd3Hhkw1PSVtz8EfBCiYa7im5rusgIHbC1eFL293Vlba7w+dydcZMO+YFOfMPbd0qtU4H/DciGBBfwBYsRbBg/IwBqUSbpAzBK7MBARU06WyrUZ7NDbY1xST7MmKj6uxT3MUu58efKF6jcpDhzWPI4qvytWR3alpj8rJLTbgFc7khB7689UuF2mCLCQ00ph1/XWnmb1PZY+KifLnmhoh++n3x0ZYgT0ZMaUJKvLNMlSSOLgyPywlVnHB1Pcp04SYkajtQGA7FLs8MNFHpub0lsbNWlroUCXw/onWnBRwBAz0nkJAthPUVf3PDltu4g6g8Tl+OG3GnsbHG3B5UQ/pGPOz0yw+zpWo9cWRTlmuYmy8dcYV+wFWm7kNw9JOEPFGTN71Psjw/V97zUKetExeySRJHQsGVxlBfh1HtZFo5h0JcoqjY5gZzFjih05I2D6qgULO1fM5SF8h06JBcoSp48FDlUVeGl6vcn5Z3SryB1YGV0pz+TtVbGJSK42LySjQ7q0vCDTnx0Wq7XfvN3bhpbEVSvOWRLtYaoxyQF/2SE2LRR9kTUpNLmmOcuiLRoyC7nK2nH03ef+99oxcsYHd6Xjza90OwauXq3AsqY6RaboF1Ieo8flNJ2oBkaZ5b1n9BHz0i8gDWNMsRerle7ez8I4th5x5W5VHBltDYkGKFLmzuxtVuzbby15bmQ+zjj29eg/uxNDbbwm6nnr/4zfXLVD4XeFK2hcOiQVKOv6fQIlRFWeVrQyPU1kUfz3lNRrCpyl4x7b7DbHREZIdGQ7U7OAZW3Bp2GCKlZbHzr+5drtJGmJzqMqqGqvPIOVrlH9UhlGiTgVB0XjZaWVSu44UVzt/ekuNoxPM+qf4FkSk9FCBj7n5tiRo39TE0r3GwDeO0jCfiUfFWj/W1agaQUS6lUNAzuHc7Nj8qOk+vj87N18Qa8jXaXL1em5cfpc/UpxYZzakevZIvMWuiJGYBqD4o1RadKLxjtb+vrLI4ztde0xTVXtnujegOi63227Ipj1mto+uY1VdqadV+FmG3N3I4R0XGLICz4BQlRN1tuh7XdBPGPv/ii8Zx7viCjPSF44EXGr76auAC5940NSd84C6MQbJ7u1o577OWH/85Gn5OX3Jh+nsSGKQIfxJe7I4xJhA9ZRnql4Pp14Q/C1jbF/zMuCgUvV3UwG55MqaeAdN8nvzNi5A7Idt+i8eD6izWgorwuSuUs7upMCapurWsQP3W6L/L73Qeirlad30PEx1u69wcakqzxyeb8iELbfYX/HeZ+p+gy9ZsX1FMYnXbhpLQ/RVztgU+lk5s9pbalE4xRzHjG8fcLP92f6N6fO/YUuqCYA8+4XtrD2yhQtwHv2ug86656WYcpP2u+h0WFuYuZjhVDHV1cbJV+NEbTA85ErPu2bVh3559YFbTyNaQ2nChtTA5pAapkGN6Re57l9GjzyH0Y1tRsro6DWM6p+dmky6jy+/l5jYjB5YaUuNJtgnDa0PI1nA1Zj61Z92GXScwa2Q807Phe5j29g3UKP6iRYxuw89va26jlgNpfGxAwZM1to6wnVCF1YcfNM9s9cWXFGX2qRaBE5zBI5nNPmceyJ9487xOU3PQSFZW8CJjX0lRqK/VPDPiINRDVdhOawckKzVKSP5d8zuEpWuaWzQtEBZ8dmJex/X2y33UG2cBOPIhcKNvYtw0jzqBU4Ua4CXvssKGku2NNeseU43+uY8iPihpfrj4wygg3U8+4q3e8IzGuAM8mPFtNGhisOkPe5LzvDA30zG9sNgxONfoS6gXhzKGqO+054ljqupndXXWza7AMsrCkooptoll3OTrOAz8ualNMgcWb9ozVGxa1CYNbFwMhu5PDMJKYUVsbMWZxSRBhaDSEPvlsMLZwVaHvZgfADteabPbiwICHoDwJyv87bRghDSA9Jbk5OD2F0zxjpEruyNkVjp4u5oqIalBNmaKf2M+ERviyorQ1XwmCpZ1nTi3rU2RLWDH5OVrHhLkMn5MIZdsmc6Dssq8hJHaqQsTXfoShkVMDm5FzU9mGQlpylSd0xc2zeGQ/8nhLK3VpfnqrewcBH02p6SYGZE/P7G2JnFkymjlsUqmLWlXCuj3R6/+z8mxkHafMvO2/lHgSClGaEFMtWwVuQqz+Q3qy4sTjJSi/OBkRR3K2BCG703MY4+QvLib0xZkOV9dUcbqW+3j5sXP/eFa79fdByxuJF7kA9WDjedV57VBO1Q7oOR9/ZzlVZOSZQ1sf2Poh4cMRy8dUkna7KzqnVEQlrdav/r2fm499+Dl4OOyU2eYhc1iSDpC2Lvxqy7GxC7xs84w4dy7s/dsry+dFoStQHr0vk5/T6+qA3ieSqVBNzPzfGT4cMKYUcn0MN1VlVZj+hTWs0t1xa3geDfDPi8jLggOiS+AiypxOy/eq9m+9Q3V85zwK4LAwyE69xXDuT83UxsyMyoZEk9tpcWYMYXlYbmrKm6FyNaK3QXXHDlSVm/LJwyGJifn/87LnQixclcIhDNQjNJxVpNoz05JL2xx2czGP6I7szIdmng07KkQPZE8bv9Wuba4TDslNfy/bXnC4hkDjLrwErtparApodrPFfyGIismKOCfOWdKfn+5KnFYyg7KPlkki4t1RcRZRR5SIb72GyEHPUEcAYLWI42slc2WnfRqWolzx6yZB80fEXMTkpvCz1O3Jg+0OzcSZUSlblVreR7DTswXDliq2oKy6gLqKAVKpaxI/DBi6CDM3ptM+2DZrWhjVqXVELHTrFf5yH1Sc2BOy8CyvNcDJZcXjy8mdYcXczAqUO+i0pjf8APXJNwoFLdB7Zi+Sw+1b+mnKJNB4Y2JnJGk2tqkkZycwMBqvpz5wbLDLH0Gn8/QZ7EwY8b5LPgsX6uF2rfqdOlmaEpOq8s08kSbk81RXsFvRCP1z+IMo8amDytJTgzz8llczq7LoRbD0IaIRRERiw9k08yNS4QcIV5dMBar9TVHRh4NbVaj3CnzmsZ3Denw3ESfJtadTKdL64tK2Me4oisJlKk3lMcv/GY/BClgxnig9nlg4HNtILqP0N/k4oBjVBMzEJDgtfFpg+JBkobBABw+jNfFZb+4Uv0/B+9gD84Sp3WGOMg40Er8RBSfKqi+DCLIURer0d/2oLxx43mw4MfN+95B7vCq6CcXmjOz75utcaOM+eltVZYFT41+nvAfx9Z+KTFHTqHRnPmtrpw3Ewaw7tA6k6tQ3zidx81lFSSUuk/bKyQFa/XsLE5BYpnq4zT7/9+C7vM31DcagX0b+y2WhEQmuXvoPMIydUJAAhL69TQ1bT8NSEgNG86ITAFkUrTOQvBmU6NzVsE8Ed7oBX4gCSjot9CLALDqDDLJj4udI21lHRRKJsq2TrpX7U9VToQFLJ0tOUkN8gMKUqtXkTliEpniJWMAqhPWPZt2b7LeupwBEz+HX/3J8v/tPZeO7L8LAXvKtE8zAwMzryvQvKkhoTX9EASq0ad66UyJ8gMrI5Lgb/mYzj/RJYQsgI2PvX2mIZN3aC6C4yf99/sHvOXv/1bAMfvseTeIOsW/yw+4R0YAXXD4x2u4e/7IpZEhhuWnK7DvezwaB94Tb9T0ENXMqMiZqt39eQ3/gVR2n8+/IJNehLXHUSVp8SPd/BvVvEsRq3ko2W/RpHHBXrHfTukeeDotxUNdb0peV3Xy7cf+Z7y0v/W0v7xsK4dG20CjcSwcwDsCBoDmPVgJvLnK92EhCJZSfeiKjso/yraVf9rrrz4vyJUY6gf9/5M4M96r4nEVVC5zqFjmUItPKEo/lYV0qyykG01lxVzPYQ3kmqq57d6DT4C/3YewFXTbfQQbwel6DtvBJem2ew8eAG+7D2E5RG/3ESwGm+tTOAH+VpKMtMaXWtWGnsNx+Yf6ifKPtM/KP/UeKX8m/kR9HveNZFVD0wfTwOdUR+fJTlpXdtKaspMO8rlF6TOym14su+n5spve7Ssrkm6zKmoSOpqkXEF3yRXYpgswRK1rKleU7tFBanI1zSSwWhVJa+VWOk9uxSw9ZvAeiaxeYWmur1egdPgzo8+/ATp67QWoZMEcfN1bltBnxidRgIWkU6MRU9I9RAqzBsQp1FevOd/b0DabAeYVpSu4UNENlfYmH7b986ExgLXkEMd1h37OpkBFX+InFqK6H5kPnqWH0iPpbemx+aQwqcD1cd4OUMogvXNtvgtG/n0xuXzHYP71weXCnflMSHqC8UwGxD8fAvkFSG9v1VTpUkbylfAOrpN4y078E5QAo8eo6lUZySmBYKwE4sUAyyUHMb57+PmLKOpkoiy0WKPMV0pLG2i36C/FKmVEKdnhqvNAehBQdvOi5cD++iu24uCsAHrcfFe2gQ6kGlwFciDb4mAFYxpBJdpaAsHVN/2Wfxc1kVCc3x9VMSr7aNFyIPOsiFUK0H8HW94GIdihIzmwvr8Cmw4A6XLkpq5xR0bF71GjuIcgx4MdR11sw3y5SfUaLtg1uxaDoBBYeTJo7vxk6xNaY2yTt0XNDE5GN+YZB3W7k77N8OZo26+StzIvcmYWwGzau9m0EvP3VA7Ozz/pdConYt1v/euN60B0pMmR8os1tsHdNJbRea3bo3mLrkEMSODpX9ccr+Kk/bZJpG8Az6y8JgK8M8hAfvXTa1mFlMKVgS8mwAlMxPcGkawD5u5L/XH8ztA7hx+H3LYjbZTQV/A/2XRaCc+thSQmuCibpDdkKiAe8mRa+HDScQ+snfejFW7h8JKLZFq5r+Snbi2X2CxR1DGp4xLzkt7KzsCbnHbMTh7e43N78Ej3nDcRK7zv1aoDGHbZ92dt9D0vejLjd7q5hYMjnnP8B7oUAxlSOlQGartliBE9DdNwMro1IxUMUKCXjQbRZEmwcf64gmHU2nU2QybF7RK91c3CSheFPPEVB5t+v3XG/do5k5GrRbdRcpokNENiGWH9heSlQGQdUkuGmiw2Oa6RAqbV3d+k7jNyn98sGaaMhTx992pcT5YRIdmGHmWMrohym6YVovzG4jfWDRXAOrvnheUQbq7RJofWSSq3Rckl/w5ilWJxhaTJoCs8HUoTiikBzz4uCNT3hEfSEqoI3XEXTXqFtnosHJJmQ/8BaYGoyhnym9i+c7jZtO19tPxIkWfCgXxZ19L4k7bT9RJvyI6T7x16f6tDkzwKpHlJViYY/AElMiTlribzBed9d+BqW58X2IT54p8eVryOu+F1wFMEikARKALF4Iij5MD4KXaLbyrgGetgwCc6cHVh9dJzV8CBapYgwUoCwM2+iisxEvcqcWwXK0l0VmST+YICpQ9UpaySLUFIJReTCH4ysxjDRwKL1GvWqEmfvCDq8lj92lk06zBDvTb2D3+fLr1SxIjRq1aPZl369NLq1ayNVqcejWLks8uVzo1WK0qq2SMhOs1llQy0dPep73tM5ZLPxZamEnhEI9ho7Ro9IrMrj2rRqct0PfXkBZq6x4hSUYf6FcgmF+jRqYXNWtGISb/aTTqrvW6lcJPYjZq5k+03lVatTu1iuFhlKWTBCZew8YgpxB/xS1Ne+lYGfHL7tDcRONwy1SG1DhsVSq1OmG+Fq3fbHXdFiBRF4577Hnh4OiYt9J0/g0fe1uiJVY44KtaP4k7UdPU/9Y4m70qWIlWa76WzataqTYsO7Xaysevk8B2nLgNY3SdBOrNc7+kzYJr+Uzvdnm6DPKabaZYZdpntmEI/KVKsxGJePkOGvWaOUmXKVfjBeZX8Ty+ln5rp3xQpmXG/+8OfQcLIGAW22Y4l00JyHAeQ7UHl5xqV3SgQBR6zKaplMGJgOuE4bqjwlv0uuuSGk0457YzrSOa5gBY0mG+9GmcpBQm0189eoGNbgxCsyjeWGrHIEgssY7LcRz71vhU+ZvGhT3xAGqNjBIYwBsbEWBgb42BczA/jYf5U09Se+oF6Wn9Hs05nTn5VDHJs1GQl/81WJ0jU1Pb31f83vHxVY6wuAaYaEqfpDEoSvzQMh+PHEf+6MJeKUpu1P1utSrUUb8SmBNHX3Fb34bJnsVfzC/JyAAA=) format("woff2")}
+/* Layout: editorial y sereno. Una idea por pantalla, fotos grandes con luz natural, texto en columnas angostas, mucho aire. Tonos piedra y arena; cada espacio solo cambia su tinte. */
+:root{
+  --stone:#EFE9E1; --sand:#E4DACD; --linen:#F7F3EE; --ink:#2F2925; --mute:#7A6F66; --line:#D9CFC3;
+  --clay:#A8735A;
+  --hc:#9C4E57; --hc-tint:#F3E6E1;
+  --sk:#5E7F78; --sk-tint:#E9EDE8;
+  --fa:#1F3254; --fa-tint:#EEEAE0;
+  --f-mark:'Cinzel JOVAN','Cinzel','Trajan Pro',Georgia,serif;
+  --f-serif:'Cormorant Garamond',Georgia,serif;
+  --f-sans:'Cormorant Garamond',Georgia,serif;
+  --wrap:1200px;
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+body{margin:0;background:var(--stone);color:var(--ink);font-family:var(--f-sans);font-weight:500;font-size:19px;line-height:1.6}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--stone)}
+h1,h2,h3,h4{margin:0;font-family:var(--f-mark);font-weight:500;line-height:1.18;letter-spacing:.02em;text-wrap:balance}
+h1 em,h2 em,h3 em{font-style:normal;color:var(--accent,var(--clay))}
+p{margin:0}
+a{color:inherit}
+img{display:block;max-width:100%}
+button{font:inherit;color:inherit;cursor:pointer}
+:focus-visible{outline:1.5px solid var(--ink);outline-offset:4px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+.kicker{font-family:var(--f-mark);font-size:.74rem;letter-spacing:.26em;text-transform:uppercase;font-weight:400;color:var(--mute)}
+.lead{font-size:1.12rem;color:var(--mute);max-width:44ch}
+.link{font-family:var(--f-mark);display:inline-flex;align-items:center;gap:.6rem;text-decoration:none;font-size:.82rem;letter-spacing:.18em;text-transform:uppercase;font-weight:400;padding-bottom:.35rem;border-bottom:1px solid currentColor}
+.link i{font-style:normal;transition:transform .35s}
+.link:hover i,a:hover .link i{transform:translateX(5px)}
+.btn{font-family:var(--f-mark);display:inline-flex;align-items:center;justify-content:center;text-decoration:none;border:1px solid var(--ink);background:var(--ink);color:var(--linen);padding:.85rem 1.6rem;border-radius:99px;font-size:.8rem;letter-spacing:.16em;text-transform:uppercase;font-weight:400;transition:background .3s,color .3s}
+.btn:hover{background:transparent;color:var(--ink)}
+.btn.ghost{background:transparent;color:var(--ink)}
+.btn.ghost:hover{background:var(--ink);color:var(--linen)}
+.ph{font-family:var(--f-mark);display:inline-block;font-size:.66rem;letter-spacing:.1em;text-transform:uppercase;border:1px dashed currentColor;border-radius:3px;padding:.1rem .45rem;opacity:.7;vertical-align:middle}
+.pic{overflow:hidden;border-radius:2px;background:var(--sand)}
+.pic img{width:100%;height:100%;object-fit:cover;transition:transform 1.4s cubic-bezier(.2,.7,.2,1)}
+a:hover .pic img{transform:scale(1.035)}
+.view{animation:fade .8s ease both}
+@keyframes fade{from{opacity:.3;transform:translateY(6px)}to{opacity:1;transform:none}}
+
+/* ---------- cabecera ---------- */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:90;background:var(--linen);transform:translateZ(0);isolation:isolate;box-shadow:0 1px 0 var(--frame,var(--fa)),0 5px 0 -3px var(--linen),0 5px 0 -2px color-mix(in srgb,var(--frame,var(--fa)) 55%,transparent),0 14px 30px -22px rgba(20,24,40,.6)}
+.top .wrap{display:flex;align-items:center;gap:2rem;min-height:76px}
+.mark{text-decoration:none;line-height:1}
+.mark b{display:block}.mark b img{height:50px;width:auto;border-radius:2px;box-shadow:0 6px 14px -8px rgba(31,50,84,.45)}
+.mark small{font-family:var(--f-mark);display:block;font-size:.58rem;letter-spacing:.3em;text-transform:uppercase;margin-top:.35rem;color:var(--mute);min-height:.7em}
+nav.main{display:flex;gap:1.8rem;margin-left:auto}
+nav.main a{font-family:var(--f-mark);text-decoration:none;font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;font-weight:400;padding:.3rem 0;border-bottom:1px solid transparent;transition:border-color .3s;white-space:nowrap}
+nav.main a:hover,nav.main a[aria-current="page"]{border-color:currentColor}
+.top .btn{padding:.6rem 1.1rem;font-size:.7rem}
+@media (max-width:900px){
+  .top .wrap{flex-wrap:wrap;gap:.4rem 1rem;padding-block:.8rem}
+  nav.main{order:3;width:100%;margin-left:0;gap:1.2rem;overflow-x:auto}
+  .top .btn{margin-left:auto}
+}
+
+/* ---------- comunes ---------- */
+.sec{padding-block:clamp(4rem,9vw,7.5rem)}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,6vw,6rem);align-items:center}
+.split.rev>:first-child{order:2}
+.headline{font-size:clamp(1.9rem,4.2vw,3.4rem)}
+.h2{font-size:clamp(1.6rem,3.1vw,2.5rem)}
+.stack{display:grid;gap:1.4rem;justify-items:start}
+@media (max-width:820px){.split{grid-template-columns:1fr}.split.rev>:first-child{order:0}}
+.rule{height:1px;background:var(--line);border:0;margin:0}
+.center{text-align:center;justify-items:center}
+.center .lead{margin-inline:auto}
+
+/* ---------- INICIO ---------- */
+.hero{padding-block:clamp(2rem,5vw,4rem) clamp(4rem,8vw,6rem)}
+.hero .split{grid-template-columns:.9fr 1.1fr}
+.hero .pic{aspect-ratio:4/3.4;max-width:100%}
+.hero .pic img{object-position:50% 60%}
+.hero h1{font-size:clamp(2.8rem,6.4vw,5.6rem)}
+/* Apertura: la placa ocupa toda la pantalla, rodeada por más azulejos iguales. Al deslizar, los azulejos se desprenden y tres de ellos se convierten en las puertas de cada espacio. */
+.ap{height:300vh;position:relative}
+.ap-stage{position:sticky;top:0;height:100vh;overflow:hidden;isolation:isolate;z-index:0;background:var(--stone);perspective:1400px}
+.ap-tile{position:absolute;left:0;top:0;background-repeat:no-repeat;will-change:transform,opacity;backface-visibility:hidden;-webkit-backface-visibility:hidden;box-shadow:inset 0 0 0 1px rgba(31,50,84,.08),0 18px 30px -20px rgba(20,24,40,.6)}
+.ap-tile.w{background-image:url(img/azulejo.jpg);background-size:200% 200%}
+.ap-tile.p,.ap-panel,.ap-card .front{background-image:url(img/placa.jpg)}
+#apTiles{position:absolute;inset:0;perspective:1400px}
+.ap-panel{position:absolute;left:0;top:0;z-index:2;will-change:transform,opacity,filter}
+.ap-hint{font-family:var(--f-mark);position:absolute;left:50%;bottom:clamp(1rem,3.5vh,2rem);transform:translateX(-50%);display:flex;align-items:center;gap:.6rem;font-size:.68rem;letter-spacing:.28em;text-transform:uppercase;color:var(--ink);background:var(--linen);padding:.75rem 1.3rem;border-radius:99px;box-shadow:0 12px 26px -14px rgba(31,50,84,.55);opacity:0;animation:fadein 1s 2.4s ease forwards;z-index:6;white-space:nowrap}
+.ap-hint i{font-style:normal;display:inline-block;animation:bob 1.8s 2.6s ease-in-out infinite}
+@keyframes bob{50%{transform:translateY(3px)}}
+@keyframes fadein{to{opacity:1}}
+@keyframes drip{0%{transform:scaleY(0)}50%{transform:scaleY(1)}100%{transform:scaleY(1);opacity:0}}
+.ap-head{position:absolute;left:0;right:0;text-align:center;opacity:0;z-index:4;pointer-events:none;padding-inline:20px}
+.ap-head h2{font-size:clamp(1.45rem,3vw,2.3rem)}
+.ap-head .kicker{display:block;margin-bottom:.7rem}
+.ap-card{position:absolute;left:0;top:0;text-decoration:none;transform-style:preserve-3d;will-change:transform;opacity:0;pointer-events:none;z-index:3}
+.ap-card>div{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;border-radius:2px;overflow:hidden}
+.ap-card .front{inset:auto;left:50%;top:50%;width:var(--s);height:var(--s);margin:calc(var(--s) / -2) 0 0 calc(var(--s) / -2);background-size:800% 500%;box-shadow:0 14px 26px -16px rgba(31,50,84,.55)}
+/* reverso de cada carta: una placa pequeña, borde de azulejos del color de cada espacio y centro marfil con doble filete */
+.ap-card .back{transform:rotateY(180deg);background:var(--tile) 0 0/var(--tx,72px) var(--ty,72px);padding:calc(var(--ty,72px) / 2) calc(var(--tx,72px) / 2);box-shadow:0 34px 60px -34px rgba(20,24,40,.7),inset 0 0 0 1px rgba(31,50,84,.15)}
+.ap-card .core{position:relative;height:100%;background:var(--linen);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:.55rem;padding:1.4rem 1rem;box-shadow:0 0 0 1px rgba(31,50,84,.12),0 6px 16px -8px rgba(20,24,40,.5)}
+.ap-card .core::before,.ap-card .core::after{content:"";position:absolute;pointer-events:none;border:2px solid var(--c);inset:7px;border-radius:2px}
+.ap-card .core::after{border-width:1px;inset:12px;opacity:.7}
+.ap-card .core .k{font-family:var(--f-mark);font-size:.62rem;letter-spacing:.42em;margin-right:-.42em;color:var(--ink)}
+.ap-card .core h3{font-size:clamp(1.2rem,1.85vw,1.65rem);color:var(--c);letter-spacing:.04em;line-height:1}
+.ap-card .core .tag{font-family:var(--f-mark);font-size:.6rem;letter-spacing:.32em;text-transform:uppercase;color:var(--mute);margin-top:-.2rem}
+.ap-card .core .div{display:flex;align-items:center;gap:.6rem;width:62%;margin:.35rem 0}
+.ap-card .core .div::before,.ap-card .core .div::after{content:"";flex:1;height:1px;background:var(--c);opacity:.6}
+.ap-card .core .div i{width:16px;height:16px;transform:rotate(45deg);background:var(--tile) 0 0/32px 32px;box-shadow:0 0 0 1.5px var(--c)}
+.ap-card .core p{font-size:clamp(1rem,1.25vw,1.15rem);line-height:1.3;color:var(--ink)}
+.ap-card .core p em{font-style:italic;color:var(--c)}
+.ap-card .core .go{font-family:var(--f-mark);font-size:.66rem;letter-spacing:.22em;text-transform:uppercase;margin-top:.5rem;padding-bottom:.3rem;border-bottom:1px solid currentColor}
+.ap-card .core .go b{font-weight:400;display:inline-block;transition:transform .35s}
+.ap-card:hover .core .go b{transform:translateX(5px)}
+.ap-card .back{transition:filter .4s}.ap-card:hover .back{filter:saturate(1.15) brightness(1.02)}
+@media (max-width:719px){
+  .ap-card .core{flex-direction:row;flex-wrap:wrap;justify-content:center;align-content:center;gap:.2rem .8rem;padding:.6rem 1rem}
+  .ap-card .core .k,.ap-card .core .div,.ap-card .core p,.ap-card .core .tag{display:none}
+  .ap-card .core h3{font-size:1.25rem;flex-basis:100%}
+  .ap-card .core .go{margin-top:.3rem}
+}
+@media (prefers-reduced-motion:reduce){.ap-hint{opacity:1}}
+.quote{background:var(--linen)}
+.quote.panel{padding:clamp(3.5rem,7vw,6.5rem)!important;margin-top:clamp(14px,3vw,40px)}
+.quote.panel>.wrap{padding:0;max-width:none;margin:0}
+.quote.panel blockquote{margin:0 auto;text-align:center;max-width:26ch}
+.quote.panel .who{justify-content:center;flex-wrap:wrap;text-align:left}
+.quote blockquote{margin:0;font-family:var(--f-serif);font-style:italic;font-size:clamp(1.8rem,3.6vw,2.9rem);line-height:1.2;max-width:24ch;text-wrap:balance}
+.quote .who{display:flex;gap:1rem;align-items:center;margin-top:2rem}
+.quote .who .dot{width:56px;height:56px;border-radius:50%;background:var(--sand);display:grid;place-items:center;font-size:.6rem;color:var(--mute);flex:none}
+.quote .who span{font-size:.9rem;color:var(--mute)}
+
+/* ---------- HEALTHCARE ---------- */
+[data-view="healthcare"]{--accent:var(--hc)}
+/* los tres potes del Ritual en arcos del mismo tamaño */
+.hc-trio{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(12px,1.8vw,24px);align-items:end;padding-top:12px}
+.hc-trio figure{margin:0;display:grid;gap:1rem;justify-items:center}
+.hc-trio .arch{width:100%;aspect-ratio:3/4.9;border-radius:999px 999px 3px 3px;overflow:hidden;background:#fff;outline:1.5px solid var(--hc);outline-offset:5px;box-shadow:0 26px 40px -28px rgba(20,24,40,.6);transition:transform .5s cubic-bezier(.2,.8,.2,1)}
+.hc-trio figure:hover .arch{transform:translateY(-6px)}
+.hc-trio .arch img{width:100%;height:100%;object-fit:cover;object-position:50% 55%}
+.hc-trio figure:nth-child(2) .arch{background:linear-gradient(#C2A995,#CBB5A3 55%,#DBC7BC)}
+.hc-trio figure:nth-child(2) .arch img{object-fit:contain;object-position:50% 100%;padding-top:14%}
+.hc-trio figcaption{font-family:var(--f-mark);font-size:.68rem;letter-spacing:.22em;text-transform:uppercase;color:var(--hc)}
+.ritual{background:var(--tint,var(--hc-tint));transition:background .9s ease}
+.steps{display:flex;margin-top:2.6rem;border-bottom:1px solid var(--line);position:relative}
+.steps button{flex:1;background:none;border:0;padding:1rem 0 1.1rem;text-align:left;display:grid;gap:.2rem;opacity:.45;transition:opacity .4s}
+.steps button b{font-family:var(--f-mark);font-weight:500;font-size:clamp(1.1rem,2vw,1.55rem);line-height:1}
+.steps button span{font-family:var(--f-mark);font-size:.7rem;letter-spacing:.18em;text-transform:uppercase}
+.steps button[aria-pressed="true"],.steps button:hover{opacity:1}
+.steps .bar{position:absolute;bottom:-1px;left:0;height:2px;width:33.333%;background:var(--accent);transition:transform .6s cubic-bezier(.3,.7,.2,1),background .6s}
+.r-body{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,6vw,5.5rem);align-items:center;margin-top:3rem}
+.r-photo{position:relative;aspect-ratio:4/5;max-width:100%;border-radius:2px;overflow:hidden;background:var(--sand)}
+.r-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:opacity .8s ease}
+.r-photo img.out{opacity:0}
+.r-info .num{font-family:var(--f-serif);font-style:italic;font-size:1.4rem;color:var(--accent);transition:color .6s}
+.r-info h3{font-size:clamp(2rem,3.6vw,2.9rem);margin-top:.1rem}
+.r-info .desc{margin-top:1.1rem;max-width:44ch;font-size:1.05rem}
+.ings{margin-top:1.2rem;font-size:.92rem;color:var(--mute);max-width:46ch}
+.ings b{font-weight:400;color:var(--ink)}
+.forms{display:grid;grid-template-columns:1fr 1fr;gap:1rem 2rem;margin-top:1.4rem;font-size:.9rem}
+.forms b{display:block;font-weight:400;font-family:var(--f-serif);font-size:1.2rem;line-height:1.2}
+.forms span{color:var(--mute)}
+.facts{display:flex;flex-wrap:wrap;gap:1.4rem 2.4rem;margin-top:1.8rem;padding-top:1.4rem;border-top:1px solid var(--line)}
+.facts b{display:block;font-family:var(--f-serif);font-weight:400;font-size:1.7rem;line-height:1}
+.facts span{font-family:var(--f-mark);font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)}
+.r-cta{display:flex;align-items:center;gap:1.4rem;flex-wrap:wrap;margin-top:2rem}
+.r-small{margin-top:1.4rem;color:var(--mute);max-width:46ch;font-style:italic;font-family:var(--f-serif);font-size:1.08rem;line-height:1.4}
+@media (max-width:820px){.r-body{grid-template-columns:1fr}.r-photo{aspect-ratio:4/4.2}.steps button span{font-size:.6rem;letter-spacing:.08em}.forms{grid-template-columns:1fr}}
+.caps{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(1rem,3vw,2.4rem);margin-top:3rem}
+.cap{display:grid;gap:.8rem;align-content:start}
+.cap .pic{aspect-ratio:3/4;max-width:100%;background:#F2E5DC}
+.cap .empty{display:grid;place-items:center;color:var(--mute);background:linear-gradient(170deg,#EDEDE3,#E3E6D9)}
+.cap h3{font-family:var(--f-mark);font-weight:500;letter-spacing:.24em;font-size:1.2rem}
+.cap .tag{font-family:var(--f-mark);font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;color:var(--accent)}
+.cap p{color:var(--mute);font-size:.95rem}
+.cap p b{font-weight:400;color:var(--ink);display:block}
+@media (max-width:820px){.caps{grid-template-columns:1fr;gap:3rem}}
+.kids{--k:#D97B42;background:#F8EEE2;transition:background .9s}
+.kids.night{--k:#7C6BC4;background:#ECE7F3}
+.kids .pic{aspect-ratio:1;max-width:min(100%,480px);background:#fff;border-radius:50%;justify-self:center;width:100%}
+.kids .pic img{object-fit:contain;padding:7%}
+.kids .logo{font-weight:400;letter-spacing:.34em;font-size:.9rem}
+.kids .logo span:nth-child(1){color:#E58A4E}.kids .logo span:nth-child(2){color:#D9AE3A}.kids .logo span:nth-child(3){color:#86AE5C}.kids .logo span:nth-child(4){color:#5A9ACC}
+.kids h2 em{color:var(--k);transition:color .6s}
+.toggle{display:inline-flex;border:1px solid var(--ink);border-radius:99px;padding:3px}
+.toggle button{font-family:var(--f-mark);border:0;background:none;border-radius:99px;padding:.55rem 1.3rem;font-size:.74rem;letter-spacing:.16em;text-transform:uppercase}
+.toggle button[aria-pressed="true"]{background:var(--ink);color:var(--linen)}
+.legal{font-size:.8rem;color:var(--mute);padding-block:2rem}
+
+/* ---------- SKINCARE ---------- */
+[data-view="skincare"]{--accent:var(--sk)}
+.sk-hero .pic{aspect-ratio:4/3;max-width:100%}
+.finder{background:var(--sk-tint)}
+.finder .grid{display:grid;grid-template-columns:1fr minmax(0,440px);gap:clamp(2rem,5vw,4.5rem);align-items:start}
+.q{margin-top:2.2rem}
+.q h3{font-family:var(--f-mark);font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;color:var(--mute);font-weight:400;margin-bottom:1rem}
+.chips{display:flex;flex-wrap:wrap;gap:.55rem}
+.chip{background:transparent;border:1px solid #C3BBB1;border-radius:99px;padding:.6rem 1.15rem;font-size:.95rem;font-weight:300;display:inline-flex;align-items:center;gap:.55rem;transition:background .3s,border-color .3s,color .3s}
+.chip i{width:.55rem;height:.55rem;border-radius:50%;background:var(--c,transparent)}
+.chip:hover{border-color:var(--ink)}
+.chip[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:var(--linen)}
+.card{background:var(--linen);padding:clamp(1.4rem,3vw,2.2rem);border-radius:2px;position:sticky;top:calc(env(safe-area-inset-top,0px) + 100px)}
+.card .kicker{display:flex;justify-content:space-between;gap:1rem}
+.card h3{font-size:2.3rem;margin-top:.6rem}
+.card .for{color:var(--mute);margin-top:.5rem;font-size:.98rem}
+.bottles{display:flex;gap:.8rem;margin-top:1.4rem}
+.bottles div{flex:1;max-width:92px;aspect-ratio:1/2;border-radius:2px;overflow:hidden;background:#fff}
+.bottles img{width:100%;height:100%;object-fit:cover}
+.card dl{margin:1.6rem 0 0;display:grid;gap:1.1rem}
+.card dt{font-family:var(--f-mark);font-size:.66rem;letter-spacing:.2em;text-transform:uppercase;color:var(--mute)}
+.card dd{margin:.2rem 0 0;font-family:var(--f-serif);font-size:1.3rem;line-height:1.2}
+.card dd small{display:block;font-family:var(--f-sans);font-size:.85rem;color:var(--mute);margin-top:.15rem}
+.card .adj{margin:1.4rem 0 0;padding:1.2rem 0 0;border-top:1px solid var(--line);list-style:none;display:grid;gap:.45rem;font-size:.93rem}
+.card .adj li::before{content:"— ";color:var(--accent)}
+.card .flag{margin-top:1rem;color:var(--mute);font-style:italic;font-family:var(--f-serif);font-size:1.05rem;line-height:1.35}
+.card .actions{margin-top:1.6rem}
+.mini-form{display:grid;gap:.6rem;margin-top:1rem}
+.mini-form input{width:100%;padding:.8rem .9rem;border:1px solid var(--line);border-radius:2px;font:inherit;background:#fff;color:var(--ink)}
+.ok{margin-top:1rem;font-size:.92rem;color:var(--mute)}
+@media (max-width:900px){.finder .grid{grid-template-columns:1fr}.card{position:relative;top:0}}
+.how{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(1.5rem,4vw,3.5rem);margin-top:3rem}
+.how .n{font-family:var(--f-serif);font-style:italic;font-size:2.6rem;color:var(--accent);line-height:1}
+.how h3{font-size:1.6rem;margin:.8rem 0 .5rem}
+.how p{color:var(--mute);font-size:.98rem}
+@media (max-width:820px){.how{grid-template-columns:1fr}}
+.line-h{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;flex-wrap:wrap;margin-top:4.5rem;padding-bottom:1rem;border-bottom:1px solid var(--line)}
+.line-h h3{font-size:1.9rem}
+.line-h span{font-family:var(--f-mark);font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--mute)}
+.prods{display:grid;grid-template-columns:repeat(var(--n),1fr);gap:clamp(.8rem,2vw,1.6rem);margin-top:1.8rem}
+.prod{display:grid;gap:.7rem;align-content:start}
+.prod .pic{aspect-ratio:1/2.5;max-width:100%;background:#fff}
+.prod .pic img{object-position:50% 50%}
+.prod h4{font-family:var(--f-serif);font-size:1.25rem}
+.prod p{font-size:.84rem;color:var(--mute);line-height:1.45}
+.prod i{display:block;width:22px;height:2px;background:var(--c)}
+@media (max-width:900px){.prods{grid-template-columns:repeat(2,1fr)}}
+.bridge{border-top:1px solid var(--line)}
+.bridge .wrap{display:flex;justify-content:space-between;align-items:center;gap:1.5rem;flex-wrap:wrap;padding-block:2.6rem}
+.bridge p{font-family:var(--f-serif);font-size:1.45rem;max-width:40ch;line-height:1.3}
+
+/* ---------- FARMACIA ---------- */
+[data-view="farmacia"]{--accent:var(--fa)}
+.fa-hero{background:var(--fa-tint)}
+.fa-hero .placa{max-width:min(620px,100%);margin:0 auto;box-shadow:0 40px 70px -40px rgba(31,50,84,.5)}
+.fa-hero .stack{margin-top:3rem}
+.fa-hero .acts{display:flex;gap:1rem;flex-wrap:wrap;justify-content:center}
+.fa-hero .btn{background:var(--fa);border-color:var(--fa)}
+.fa-hero .btn:hover{background:transparent;color:var(--fa)}
+.fa-hero .btn.ghost{background:transparent;color:var(--fa)}
+.fa-hero .btn.ghost:hover{background:var(--fa);color:var(--linen)}
+
+.topics{margin-top:2.4rem}
+.topics .chip[aria-pressed="true"]{background:var(--fa);border-color:var(--fa)}
+.case{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:clamp(1.5rem,4vw,3.5rem);margin-top:2.6rem;padding-top:2.2rem;border-top:1px solid var(--line)}
+.case h4{font-family:var(--f-mark);font-size:.68rem;letter-spacing:.22em;text-transform:uppercase;color:var(--mute);font-weight:400;margin-bottom:.7rem}
+.case .big{font-family:var(--f-serif);font-size:1.6rem;line-height:1.25}
+.case ul{margin:0;padding:0;list-style:none;display:grid;gap:.3rem}
+.case .med{font-family:var(--f-serif);font-style:italic;font-size:1.2rem;line-height:1.35}
+@media (max-width:820px){.case{grid-template-columns:1fr}}
+.proc{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(1.5rem,4vw,3.5rem);margin-top:3rem}
+.proc .n{font-family:var(--f-mark);font-size:1.3rem;color:var(--fa);letter-spacing:.1em}
+.proc h3{font-size:1.6rem;margin:.6rem 0 .4rem}
+.proc p{color:var(--mute);font-size:.98rem}
+@media (max-width:820px){.proc{grid-template-columns:1fr}}
+.consult{background:var(--sand)}
+.consult .split{align-items:start}
+.contact{display:grid;gap:.35rem;margin-top:.6rem;font-size:.95rem}
+.contact code{font-family:var(--f-sans);font-weight:400;user-select:all}
+form.fa{display:grid;gap:1.1rem;background:var(--linen);padding:clamp(1.4rem,3vw,2.4rem);border-radius:2px}
+form.fa label{font-family:var(--f-mark);display:grid;gap:.4rem;font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--mute)}
+form.fa input,form.fa textarea,form.fa select{font:inherit;font-family:var(--f-sans);font-weight:500;font-size:1rem;letter-spacing:0;text-transform:none;color:var(--ink);padding:.75rem .85rem;border:1px solid var(--line);background:#fff;border-radius:2px;width:100%}
+form.fa textarea{min-height:120px;resize:vertical}
+.seg{display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--fa);border-radius:99px;padding:3px}
+.seg button{font-family:var(--f-mark);border:0;background:none;border-radius:99px;padding:.65rem;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase}
+.seg button[aria-pressed="true"]{background:var(--fa);color:var(--linen)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+form.fa .btn{justify-self:start;background:var(--fa);border-color:var(--fa)}
+form.fa .btn:hover{background:transparent;color:var(--fa)}
+@media (max-width:640px){.two{grid-template-columns:1fr}}
+
+/* ---------- SOBRE MÍ ---------- */
+.about .portrait{aspect-ratio:4/5;max-width:100%;background:var(--sand);display:grid;place-items:center;color:var(--mute);border-radius:2px}
+.about .body{display:grid;gap:1.1rem;max-width:52ch;font-size:1.05rem}
+.roots{display:grid;grid-template-columns:repeat(3,1fr);gap:1.6rem;margin-top:1rem;padding-top:1.8rem;border-top:1px solid var(--line);width:100%}
+.roots b{display:block;font-family:var(--f-serif);font-weight:400;font-size:1.25rem}
+.roots span{font-size:.88rem;color:var(--mute)}
+@media (max-width:640px){.roots{grid-template-columns:1fr}}
+
+footer{background:var(--ink);color:var(--stone)}
+footer .wrap{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:2rem;padding-block:4rem 3rem}
+footer .fm{line-height:0}
+footer p{opacity:.65;font-size:.92rem;margin-top:.8rem;max-width:30ch}
+footer h4{font-family:var(--f-mark);font-size:.66rem;letter-spacing:.22em;text-transform:uppercase;font-weight:400;opacity:.6;margin-bottom:.8rem}
+footer a{display:block;text-decoration:none;font-size:.94rem;padding:.15rem 0;opacity:.85}
+@media (max-width:760px){footer .wrap{grid-template-columns:1fr 1fr}}
+
+/* ---------- azulejos en toda la web ----------
+   Todos los azulejos se mueven como piezas reales: caen desde la cámara con un pequeño rebote,
+   y al irse se desprenden y caen por gravedad.
+   .cenefa: guarda */
+.cenefa{display:grid;grid-auto-flow:column;grid-auto-columns:var(--ts,48px);height:var(--ts,48px);overflow-x:clip;overflow-y:visible;perspective:700px;position:relative;z-index:2}
+.cenefa i{display:block;background-size:200% 200%;backface-visibility:hidden;margin:-.4px;box-shadow:inset 0 0 0 1px rgba(31,50,84,.1);
+  transform:translate3d(0,-160%,300px) rotateX(-80deg) rotateZ(var(--rz0,0deg));opacity:0;
+  transition:transform .95s cubic-bezier(.2,1.3,.35,1) var(--d,0s),opacity .3s linear var(--d,0s)}
+.cenefa.on i{transform:none;opacity:1}
+.cenefa.on.done i{transition:transform .35s cubic-bezier(.2,.9,.3,1.2);transition-delay:0s}
+.cenefa.on.done i:hover{transform:translate3d(0,-8px,60px) rotateX(18deg);box-shadow:0 14px 20px -10px rgba(20,24,40,.5)}
+.has-tg{position:relative}
+.placa-wrap{position:relative;max-width:min(620px,100%);margin:0 auto;line-height:0}
+.placa-wrap .placa{max-width:100%}
+@media (prefers-reduced-motion:reduce){.cenefa i{transform:none!important;opacity:1!important}}
+
+/* ---------- pared de azulejos de fondo ----------
+   Los azulejos de cada espacio son la pared; cada bloque de contenido es una placa marfil
+   con el doble filete del centro de la placa de la farmacia. */
+body{background-color:#E9E2D6;background-image:var(--wall,url(img/azulejo.jpg));background-size:var(--wt,128px) var(--wt,128px);background-attachment:fixed;--frame:var(--fa)}
+body[data-house="healthcare"]{--wall:url(img/tile-hc.jpg);--frame:var(--hc)}
+body[data-house="skincare"]{--wall:url(img/tile-sk.jpg);--frame:var(--sk)}
+@media (max-width:720px){body{--wt:88px;background-attachment:scroll}}
+main{padding-top:clamp(14px,3vw,40px)}
+body[data-house="inicio"] main{padding-top:0}
+:where(.panel){background-color:var(--linen)}
+.panel{position:relative;max-width:min(1280px,calc(100% - 2 * clamp(12px,3.5vw,56px)));margin:0 auto clamp(14px,3vw,40px);padding-left:clamp(30px,6vw,96px);padding-right:clamp(30px,6vw,96px);border-radius:3px;box-shadow:0 40px 70px -46px rgba(20,24,40,.75),0 0 0 1px rgba(31,50,84,.1)}
+.panel::before,.panel::after{content:"";position:absolute;pointer-events:none;border:2px solid var(--frame);border-radius:2px;inset:clamp(8px,1.2vw,14px);opacity:.8}
+.panel::after{border-width:1px;inset:calc(clamp(8px,1.2vw,14px) + 6px);opacity:.55}
+.panel[style*="padding-top:0"]{padding-top:clamp(3rem,6vw,5rem)!important}
+.panel[style*="padding-top:0"]>.rule:first-child{display:none}
+.panel.legal{padding-block:2.2rem}
+.bridge.panel{border-top:0}
+.cenefa{display:none!important}
+
+/* ---------- imágenes animadas ----------
+   .rv: al entrar en pantalla suben y aparecen, y la foto se asienta (de ampliada y desaturada a nítida). */
+.rv{opacity:0;transform:translateY(56px) scale(.96);transition:opacity .9s ease var(--rd,0s),transform 1.25s cubic-bezier(.2,.8,.2,1) var(--rd,0s)}
+.rv.in{opacity:1;transform:none}
+.rv img{transform:scale(1.2);filter:saturate(.5) blur(3px);transition:transform 2s cubic-bezier(.2,.8,.2,1) var(--rd,0s),filter 1.3s ease var(--rd,0s)}
+.rv.in img{transform:none;filter:none}
+.rv.in:hover img,a:hover .rv.in img{transform:scale(1.05);transition-delay:0s;transition-duration:1.2s}
+@media (prefers-reduced-motion:reduce){.rv,.rv img{opacity:1!important;transform:none!important;filter:none!important}}
+</style>
+
+<header class="top">
+  <div class="wrap">
+    <a class="mark" href="#inicio" aria-label="JOVAN, inicio"><b><img src="img/placa.jpg" alt="JOVAN Farmacia Especializada" width="81" height="50"></b><small id="houseName"></small></a>
+    <nav class="main" aria-label="Secciones">
+      <a href="#healthcare" data-r="healthcare">Healthcare</a>
+      <a href="#skincare" data-r="skincare">Skincare</a>
+      <a href="#farmacia" data-r="farmacia">Farmacia</a>
+      <a href="#sobre-mi" data-r="sobre-mi">Sobre mí</a>
+    </nav>
+    <a class="btn" href="#consulta">Consultar</a>
+  </div>
+</header>
+
+<main>
+<!-- ================= INICIO ================= -->
+<section class="view" data-view="inicio">
+  <div class="ap" id="apertura">
+    <div class="ap-stage" id="apStage">
+      <h1 class="ap-panel" id="apPanel" role="img" aria-label="JOVAN Farmacia Especializada"></h1>
+      <div id="apTiles" aria-hidden="true"></div>
+      <div class="ap-hint" id="apHint">Desliza <i>↓</i></div>
+      <div class="ap-head" id="apHead">
+        <span class="kicker">¿Qué te trae hoy?</span>
+        <h2>Tres espacios, <em>una misma mirada</em></h2>
+      </div>
+      <a class="ap-card" href="#healthcare" style="--c:var(--hc)">
+        <div class="front"></div>
+        <div class="back" style="--tile:url(img/tile-hc.jpg)"><div class="core">
+          <span class="k">JOVAN</span>
+          <h3>Healthcare</h3>
+          <span class="tag">Suplementos</span>
+          <span class="div"><i></i></span>
+          <p>Tu ritual diario,<br><em>desde dentro</em></p>
+          <span class="go">Descubrir el ritual <b>→</b></span>
+        </div></div>
+      </a>
+      <a class="ap-card" href="#skincare" style="--c:var(--sk)">
+        <div class="front"></div>
+        <div class="back" style="--tile:url(img/tile-sk.jpg)"><div class="core">
+          <span class="k">JOVAN</span>
+          <h3>Skincare</h3>
+          <span class="tag">Cuidado facial</span>
+          <span class="div"><i></i></span>
+          <p>Una fórmula que<br><em>se adapta a tu piel</em></p>
+          <span class="go">Personalizar <b>→</b></span>
+        </div></div>
+      </a>
+      <a class="ap-card" href="#farmacia" style="--c:var(--fa)">
+        <div class="front"></div>
+        <div class="back" style="--tile:url(img/azulejo.jpg)"><div class="core">
+          <span class="k">JOVAN</span>
+          <h3>Farmacia</h3>
+          <span class="tag">Especializada</span>
+          <span class="div"><i></i></span>
+          <p>Orientación y<br><em>formulación magistral</em></p>
+          <span class="go">Hacer una consulta <b>→</b></span>
+        </div></div>
+      </a>
+    </div>
+  </div>
+
+  <div class="cenefa" aria-hidden="true"></div>
+  <div class="quote sec panel">
+    <div class="wrap">
+      <blockquote>«Cada fórmula empieza escuchando a la persona que la va a usar.»</blockquote>
+      <div class="who"><span class="dot">Foto</span><span>Química farmacéutica, fundadora de JOVAN · <a href="#sobre-mi">Conocerme</a> <span class="ph">Frase a confirmar</span></span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= HEALTHCARE ================= -->
+<section class="view" data-view="healthcare" hidden>
+  <div class="wrap sec hc-hero panel" style="padding-top:clamp(2rem,5vw,4rem)">
+    <div class="split">
+      <div class="stack">
+        <span class="kicker">JOVAN Healthcare · Suplementos</span>
+        <h1 class="headline">Tu ritual diario, <em>desde dentro</em></h1>
+        <p class="lead">El cuidado también está en lo que incorporas a tu rutina cada día. Por eso nuestra primera línea se llama Ritual: tres pasos, cada uno con su momento.</p>
+        <a class="link" href="#healthcare" id="toRitual">Ver el ritual <i>↓</i></a>
+      </div>
+      <div class="hc-trio" aria-label="Los tres potes del Ritual">
+        <figure><div class="arch"><img src="img/ritual-01-skin.jpg" alt="Ritual 01 Skin"></div><figcaption>01 · Skin</figcaption></figure>
+        <figure><div class="arch"><img src="img/ritual-02-balance.jpg" alt="Ritual 02 Balance"></div><figcaption>02 · Balance</figcaption></figure>
+        <figure><div class="arch"><img src="img/ritual-03-rest.jpg" alt="Ritual 03 Rest"></div><figcaption>03 · Rest</figcaption></figure>
+      </div>
+    </div>
+  </div>
+
+  <div class="ritual sec panel" id="ritual">
+    <div class="wrap">
+      <div class="stack">
+        <span class="kicker">Ritual</span>
+        <h2 class="h2">Tres pasos, <em>tres momentos del día</em></h2>
+      </div>
+      <div class="steps" role="group" aria-label="Pasos del ritual">
+        <button data-step="0"><span>01 · Mañana</span><b>Skin</b></button>
+        <button data-step="1"><span>02 · Con las comidas</span><b>Balance</b></button>
+        <button data-step="2"><span>03 · Noche</span><b>Rest</b></button>
+        <i class="bar" id="rBar"></i>
+      </div>
+      <div class="r-body">
+        <div class="r-photo" id="rPhoto"></div>
+        <div class="r-info">
+          <div class="num" id="rNum"></div>
+          <h3 id="rName"></h3>
+          <p class="desc" id="rDesc"></p>
+          <p class="ings" id="rIngs"></p>
+          <div id="rExtra"></div>
+          <div class="facts" id="rFacts"></div>
+          <div class="r-cta" id="rCta"></div>
+          <p class="r-small" id="rSmall"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="cenefa" aria-hidden="true"></div>
+  <div class="wrap sec panel">
+    <div class="split" style="align-items:end">
+      <h2 class="h2">La colección <em>en cápsulas</em></h2>
+      <p class="lead">Ritual le da estructura a tu día. Las cápsulas amplían esa idea con fórmulas enfocadas en necesidades concretas.</p>
+    </div>
+    <div class="caps" id="capsGrid"></div>
+  </div>
+
+  <div class="kids sec panel" id="kids">
+    <div class="wrap">
+      <div class="split">
+        <div class="pic" id="kPic"><img id="kImg" src="img/kids-grow.jpg" alt=""></div>
+        <div class="stack">
+          <span class="logo">RITUAL <span>K</span><span>I</span><span>D</span><span>S</span></span>
+          <h2 class="h2" id="kTitle"></h2>
+          <p class="lead" id="kDesc" style="color:var(--ink)"></p>
+          <p style="font-size:.88rem;color:var(--mute)">Gomitas · 90 unidades · 180 g</p>
+          <div class="toggle" role="group" aria-label="Momento del día">
+            <button data-k="day" aria-pressed="true">Día</button>
+            <button data-k="night" aria-pressed="false">Noche</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="wrap legal panel">Los suplementos alimenticios no sustituyen una alimentación variada y equilibrada ni un estilo de vida saludable. <span class="ph">Texto legal a confirmar</span></div>
+</section>
+
+<!-- ================= SKINCARE ================= -->
+<section class="view" data-view="skincare" hidden>
+  <div class="wrap sec sk-hero panel" style="padding-top:clamp(2rem,5vw,4rem)">
+    <div class="split rev">
+      <div class="stack">
+        <span class="kicker">JOVAN Skincare · Personaliza tu fórmula</span>
+        <h1 class="headline">¿Qué necesita tu piel <em>hoy</em>?</h1>
+        <p class="lead">Las necesidades de tu piel cambian, y tu fórmula puede adaptarse a ellas. Cuéntanos cómo la sientes y te mostramos por dónde empezar.</p>
+        <a class="link" href="#skincare" id="toFinder">Empezar <i>↓</i></a>
+      </div>
+      <div class="pic"><img src="img/sk-serums-marmol.jpg" alt="Los cinco sérums JOVAN Skincare sobre mármol"></div>
+    </div>
+  </div>
+
+  <div class="finder sec panel" id="finder">
+    <div class="wrap grid">
+      <div>
+        <h2 class="h2">Cuéntanos <em>cómo está tu piel</em></h2>
+        <div class="q"><h3>Hoy la siento…</h3><div class="chips" id="needChips"></div></div>
+        <div class="q"><h3>Mi tipo de piel es…</h3><div class="chips" id="typeChips"></div></div>
+      </div>
+      <aside class="card" aria-live="polite">
+        <div class="kicker"><span>Tu punto de partida</span><span id="fNo"></span></div>
+        <h3>Tu fórmula</h3>
+        <p class="for" id="fFor"></p>
+        <div class="bottles" id="fPicks"></div>
+        <dl>
+          <div><dt>Limpieza</dt><dd id="fFoam"></dd></div>
+          <div><dt>Tratamiento</dt><dd id="fSerum"></dd></div>
+        </dl>
+        <ul class="adj" id="fAdj"></ul>
+        <div id="fFlag"></div>
+        <div class="actions"><button class="btn" id="fSend">Quiero esta fórmula</button></div>
+        <form class="mini-form" id="fForm" hidden>
+          <input id="fName" placeholder="Tu nombre" aria-label="Tu nombre" required>
+          <input id="fContact" placeholder="Email o WhatsApp" aria-label="Email o WhatsApp" required>
+          <button class="btn" type="submit">Enviar a JOVAN</button>
+        </form>
+        <div id="fOk"></div>
+      </aside>
+    </div>
+  </div>
+
+  <div class="cenefa" aria-hidden="true"></div>
+  <div class="wrap sec panel">
+    <div class="stack center"><span class="kicker">Personaliza tu fórmula</span><h2 class="h2">Así <em>funciona</em></h2></div>
+    <div class="how">
+      <div><div class="n">i.</div><h3>Nos cuentas cómo está tu piel</h3><p>Lo que sientes hoy y tu tipo de piel. Puedes marcar varias cosas a la vez.</p></div>
+      <div><div class="n">ii.</div><h3>Te proponemos una fórmula</h3><p>Partimos de las espumas y sérums de la línea, ya estandarizados.</p></div>
+      <div><div class="n">iii.</div><h3>Ajustamos si tiene sentido</h3><p>Si tu caso lo pide, evaluamos cambios en activos, concentración o textura.</p></div>
+    </div>
+    <div class="line-h"><h3>Espumas faciales</h3><span>200 mL · una para cada tipo de piel</span></div>
+    <div class="prods" style="--n:4" id="foamGrid"></div>
+    <div class="line-h"><h3>Sérums</h3><span>Cinco activos para tratar</span></div>
+    <div class="prods" style="--n:5" id="serumGrid"></div>
+  </div>
+  <div class="bridge panel">
+    <div class="wrap">
+      <p>¿Acné persistente, manchas que cambian o una receta de tu dermatólogo? Lo vemos en la Farmacia.</p>
+      <a class="link" href="#farmacia">Ir a la Farmacia <i>→</i></a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FARMACIA ================= -->
+<section class="view" data-view="farmacia" hidden>
+  <div class="fa-hero sec panel" style="padding-top:clamp(2.5rem,5vw,4.5rem)">
+    <div class="wrap">
+      <div class="placa-wrap"><img class="placa" src="img/placa.jpg" alt="JOVAN Farmacia Especializada, placa de azulejos azul marino y marfil"></div>
+      <div class="stack center">
+        <h1 class="headline">Orientación y <em>formulación magistral</em></h1>
+        <p class="lead">Piel, cuero cabelludo y uñas. Escríbenos si tienes una receta, o si tienes una inquietud y quieres saber por dónde empezar.</p>
+        <div class="acts">
+          <a class="btn" href="#consulta" data-mode="receta">Tengo una receta</a>
+          <a class="btn ghost" href="#consulta" data-mode="duda">Tengo una inquietud</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="cenefa" aria-hidden="true"></div>
+
+  <div class="wrap sec panel">
+    <div class="split" style="align-items:end">
+      <h2 class="h2">¿Qué <em>te preocupa</em>?</h2>
+      <p class="lead">Elige un tema y te contamos qué podemos ofrecerte desde la farmacia, en qué presentación y cuándo conviene ver a un médico.</p>
+    </div>
+    <div class="topics chips" id="tiles"></div>
+    <div class="case" id="case"></div>
+  </div>
+
+  <div class="wrap sec panel" style="padding-top:0">
+    <hr class="rule">
+    <div class="proc">
+      <div><div class="n">I</div><h3>Nos escribes</h3><p>Con tu receta, o con lo que notas y desde cuándo. Si tienes fotos, ayudan.</p></div>
+      <div><div class="n">II</div><h3>Te orientamos</h3><p>Te explicamos qué opciones hay desde la farmacia y si corresponde una evaluación médica o una receta.</p></div>
+      <div><div class="n">III</div><h3>Preparamos tu fórmula</h3><p>Shampoo, loción capilar, gel, solución para uñas o la presentación que corresponda.</p></div>
+    </div>
+  </div>
+
+  <div class="consult sec panel" id="consulta-form">
+    <div class="wrap split">
+      <div class="stack">
+        <span class="kicker">Consulta</span>
+        <h2 class="h2">Cuéntanos <em>tu caso</em></h2>
+        <p class="lead">Te respondemos personalmente. Si tu caso necesita ver a un médico primero, te lo diremos.</p>
+        <div class="contact">
+          <span>WhatsApp · <code>+51 000 000 000</code></span>
+          <span>Email · <code>farmacia@jovan.example</code></span>
+          <span class="ph" style="justify-self:start;margin-top:.4rem">Datos de contacto a definir</span>
+        </div>
+      </div>
+      <form class="fa" id="faForm">
+        <div class="seg" role="group" aria-label="Tipo de consulta">
+          <button type="button" data-m="receta">Tengo una receta</button>
+          <button type="button" data-m="duda" aria-pressed="true">Tengo una inquietud</button>
+        </div>
+        <label for="faTopic">Tema<select id="faTopic"></select></label>
+        <label for="faMsg"><span id="faMsgLabel">Qué notas y desde cuándo</span>
+          <textarea id="faMsg" placeholder="Ej.: Tengo caspa hace meses y los shampoos de farmacia no me funcionan."></textarea></label>
+        <label for="faFile" id="faFileWrap" hidden>Foto de la receta<input type="file" id="faFile" accept="image/*,.pdf"></label>
+        <div class="two">
+          <label for="faName">Nombre<input id="faName" required></label>
+          <label for="faContact">Email o WhatsApp<input id="faContact" required></label>
+        </div>
+        <button class="btn" type="submit">Enviar consulta</button>
+        <div id="faOk"></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SOBRE MÍ ================= -->
+<section class="view" data-view="sobre-mi" hidden>
+  <div class="wrap sec about panel" style="padding-top:clamp(2rem,5vw,4rem)">
+    <div class="split" style="align-items:start">
+      <div class="portrait"><span class="ph">Tu retrato</span></div>
+      <div class="stack">
+        <span class="kicker">Sobre mí</span>
+        <h1 class="h2">La profesional <em>detrás de JOVAN</em></h1>
+        <p class="kicker" style="color:var(--ink)">Química farmacéutica · Formulación cosmética y magistral</p>
+        <div class="body">
+          <p><span class="ph">Tu texto</span> Aquí va tu historia en dos o tres párrafos cortos: dónde te formaste, cómo llegaste a la formulación y qué aprendiste preparando fórmulas para casos concretos.</p>
+          <p>El segundo párrafo cuenta de dónde nace JOVAN: la farmacia como origen, Skincare como la extensión natural de esas fórmulas a medida y Healthcare como el cuidado que se incorpora cada día.</p>
+          <p>Cierra con lo que te mueve hoy y con una invitación a escribirte.</p>
+        </div>
+        <div class="roots">
+          <div><b>La farmacia</b><span>El origen: formulación magistral.</span></div>
+          <div><b>Skincare</b><span>Nace dentro, con fórmulas a medida.</span></div>
+          <div><b>Healthcare</b><span>Se amplía al cuidado diario.</span></div>
+        </div>
+        <a class="btn" href="#consulta" style="margin-top:1rem">Escríbeme</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="cenefa" data-tile="azulejo" aria-hidden="true"></div>
+  <div class="wrap">
+    <div><div class="fm"><img src="img/placa.jpg" alt="JOVAN Farmacia Especializada" style="height:90px;width:auto"></div><p>Farmacia especializada, suplementos y cuidado de la piel.</p></div>
+    <div><h4>Healthcare</h4><a href="#healthcare">Ritual</a><a href="#healthcare">Cápsulas</a><a href="#ritual-kids">Ritual Kids</a></div>
+    <div><h4>Skincare</h4><a href="#skincare">Personaliza tu fórmula</a><a href="#skincare">La línea</a></div>
+    <div><h4>Farmacia</h4><a href="#farmacia">Orientación</a><a href="#consulta">Hacer una consulta</a><a href="#sobre-mi">Sobre mí</a></div>
+  </div>
+</footer>
+
+<script>
+(function(){
+const $=id=>document.getElementById(id);
+
+/* ---------- navegación ---------- */
+const HOUSE={inicio:'',healthcare:'Healthcare',skincare:'Skincare',farmacia:'Farmacia Especializada','sobre-mi':''};
+const ALIAS={consulta:['farmacia','consulta-form'],'ritual-kids':['healthcare','kids']};
+/* ---------- azulejos ---------- */
+const REDUCE=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const TILEIMG={inicio:'azulejo',healthcare:'tile-hc',skincare:'tile-sk',farmacia:'azulejo','sobre-mi':'azulejo'};
+let current=null;
+// cambio de imagen directo (sin azulejos)
+function tileSwap(el,fn){fn();}
+// guardas de azulejos
+const cenIO=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){const el=e.target;cenIO.unobserve(el);el.classList.add('on');setTimeout(()=>el.classList.add('done'),2300);}}),{threshold:.6});
+function armCenefas(view){
+  const ts=Math.round(Math.min(64,Math.max(38,innerWidth/26)));
+  (view?[...view.querySelectorAll('.cenefa'),...document.querySelectorAll('footer .cenefa')]:[]).forEach(el=>{
+    const n=Math.ceil(innerWidth/ts)+1;el.style.setProperty('--ts',ts+'px');el.classList.remove('on');
+    el.classList.remove('done');let h='';for(let c=0;c<n;c++)h+=`<i style="background-image:url(img/${el.dataset.tile||TILEIMG[current]}.jpg);background-position:${c%2?'100% 0%':'0% 0%'};--d:${(c/n*1.1+Math.random()*.08).toFixed(3)}s;--rz0:${((Math.random()-.5)*40)|0}deg"></i>`;
+    el.innerHTML=h;cenIO.observe(el);
+  });
+}
+/* ---------- navegación ---------- */
+function target(){let h=(location.hash||'#inicio').slice(1),anchor=null;if(ALIAS[h]){anchor=ALIAS[h][1];h=ALIAS[h][0];}if(!(h in HOUSE))h='inicio';return [h,anchor];}
+function route(){
+  const [h,anchor]=target();
+  const changed=h!==current;current=h;document.body.dataset.house=h;
+  document.querySelectorAll('[data-view]').forEach(v=>v.hidden=v.dataset.view!==h);
+  $('houseName').textContent=HOUSE[h];
+  document.querySelectorAll('nav.main a').forEach(a=>{if(a.dataset.r===h)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');});
+  if(anchor)requestAnimationFrame(()=>$(anchor).scrollIntoView({block:'start'}));else window.scrollTo(0,0);
+  if(changed){const v=document.querySelector(`[data-view="${h}"]`);requestAnimationFrame(()=>{armCenefas(v);if(typeof armReveal==='function')armReveal(v);});}
+}
+function navigate(){route();}
+addEventListener('hashchange',navigate);route();
+let rsz;addEventListener('resize',()=>{clearTimeout(rsz);rsz=setTimeout(()=>armCenefas(document.querySelector(`[data-view="${current}"]`)),200);});
+[['toRitual','ritual'],['toFinder','finder']].forEach(([b,t])=>$(b).addEventListener('click',e=>{e.preventDefault();$(t).scrollIntoView({behavior:'smooth'});}));
+
+
+/* ---------- Apertura (placa + azulejos) ---------- */
+(function(){
+  const view=document.querySelector('[data-view="inicio"]'),ap=$('apertura'),stage=$('apStage'),wall=$('apTiles'),panel=$('apPanel');
+  const hint=$('apHint'),head=$('apHead'),mark=document.querySelector('.top .mark'),top=document.querySelector('.top');
+  const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const IW=1300,IH=804,C=8,R=5,CW=IW/C,CH=IH/R;          // placa.jpg: 8 x 5 azulejos, el logo ocupa las 6 x 3 del centro
+  const cards=[...stage.querySelectorAll('.ap-card')];
+  const CHOSEN=[[4,1],[4,4],[4,6]];                       // azulejos de la placa que se vuelven Healthcare, Skincare, Farmacia
+  cards.forEach((c,k)=>{const [r,cc]=CHOSEN[k];c.querySelector('.front').style.backgroundPosition=`${cc/(C-1)*100}% ${r/(R-1)*100}%`;});
+  cards.forEach(c=>c.addEventListener('focus',()=>{const r=ap.getBoundingClientRect();if(r.top>-(ap.offsetHeight-innerHeight)*.8)scrollTo({top:scrollY+r.top+ap.offsetHeight-innerHeight,behavior:reduce?'auto':'smooth'});}));
+  const cl=(v,a=0,b=1)=>Math.min(b,Math.max(a,v)),ss=(a,b,v)=>{v=cl((v-a)/(b-a));return v*v*(3-2*v)},lerp=(a,b,t)=>a+(b-a)*t,ease=v=>1-Math.pow(1-cl(v),3),
+        back=v=>{v=cl(v);const k=1.6;return 1+(k+1)*Math.pow(v-1,3)+k*Math.pow(v-1,2);};
+  let tiles=[],key='',t0=null,G;
+  function build(vw,vh){
+    const s=Math.min(Math.max(vw/IW,vh/IH),vw/(6.5*CW)),w=CW*s,h=CH*s,X0=(vw-IW*s)/2,Y0=(vh-IH*s)/2;
+    const c0=-Math.ceil(X0/w),c1=C-1+Math.ceil(X0/w),r0=-Math.ceil(Y0/h),r1=R-1+Math.ceil(Y0/h);
+    G={s,w,h,X0,Y0};
+    const k=[vw,vh].join();if(k===key)return;key=k;
+    wall.textContent='';tiles=[];
+    const pcx=X0+IW*s/2,pcy=Y0+IH*s/2,maxd=Math.hypot(vw,vh)/2;
+    let seed=7;const rnd=()=>(seed=(seed*16807)%2147483647)/2147483647;
+    for(let r=r0;r<=r1;r++)for(let c=c0;c<=c1;c++){
+      const inPlaque=r>=0&&r<R&&c>=0&&c<C;
+      if(inPlaque&&r>=1&&r<=3&&c>=1&&c<=6)continue;        // centro = logo
+      const ci=CHOSEN.findIndex(([a,b])=>a===r&&b===c);
+      const x=X0+c*w,y=Y0+r*h,cx=x+w/2-pcx,cy=y+h/2-pcy,d=Math.hypot(cx,cy)||1;
+      let el;
+      if(ci>=0){el=cards[ci];}
+      else{
+        el=document.createElement('div');
+        if(inPlaque){el.className='ap-tile p';el.style.backgroundSize=`${IW*s}px ${IH*s}px`;el.style.backgroundPosition=`${-c*w}px ${-r*h}px`;}
+        else{el.className='ap-tile w';el.style.backgroundPosition=((r+c)%2+2)%2?'100% 0%':'0% 0%';}
+        el.style.width=w+.6+'px';el.style.height=h+.6+'px';
+        wall.appendChild(el);
+      }
+      tiles.push({el,x,y,card:ci>=0?ci:undefined,dn:Math.min(1.2,d/maxd),dx:cx/d,dy:cy/d,rx:(rnd()-.5)*300,ry:(rnd()-.5)*360,rr:rnd(),far:.5+rnd()*.6,
+        ix:(rnd()-.5)*vw*1.2,iy:(rnd()-.5)*vh*1.2,iz:500+rnd()*500,irx:(rnd()-.5)*540,iry:(rnd()-.5)*540,irz:(rnd()-.5)*180,id:rnd()});
+    }
+    panel.style.width=6*w+.6+'px';panel.style.height=3*h+.6+'px';
+    panel.style.backgroundSize=`${IW*s}px ${IH*s}px`;panel.style.backgroundPosition=`${-w}px ${-h}px`;
+  }
+  let lastSig='';
+  function frame(now){
+    requestAnimationFrame(frame);
+    if(view.hidden){mark.style.opacity='';t0=null;return;}
+    if(t0===null)t0=now;
+    const t=(now-t0)/1000,vw=stage.clientWidth,vh=innerHeight,hdr=top.offsetHeight;
+    ap.style.marginTop=-hdr+'px';
+    const rr=ap.getBoundingClientRect(),p=cl(-rr.top/Math.max(1,ap.offsetHeight-vh));
+    const sig=[vw,vh,hdr,p.toFixed(4),t<5?t:5].join();if(sig===lastSig)return;lastSig=sig;
+    build(vw,vh);
+    const {w,h,X0,Y0}=G;
+    // logo central
+    const pin=reduce?1:cl((t-1.55)/.75),pb=back(pin),pc=ss(.04,.38,p);
+    // el logo cae como un sello sobre la pared ya armada
+    panel.style.transform=`translate3d(${X0+w}px,${Y0+h-pc*50}px,${(1-pb)*500+pc*300}px) scale(${1-.1*pc})`;
+    panel.style.opacity=cl(pin*3)*(1-pc);panel.style.filter=pin<1?`blur(${(1-pin)*6}px)`:'';
+    hint.style.visibility=p>.05?'hidden':'';
+    mark.style.opacity=ss(.25,.5,p);
+    // destino de las tarjetas
+    head.style.top=(hdr+cl(vh*.04,16,48))+'px';
+    const hb=hdr+cl(vh*.04,16,48)+head.offsetHeight+cl(vh*.035,14,40),avail=vh-hb-cl(vh*.04,16,40);
+    const ho=ss(.6,.82,p);head.style.opacity=ho;head.style.transform=`translateY(${(1-ho)*18}px)`;
+    let T;
+    if(vw<720){const cw=vw-32,ch=Math.min(170,(avail-24)/3),y0=hb+(avail-(3*ch+24))/2;T=[0,1,2].map(k=>({x:16,y:y0+k*(ch+12),w:cw,h:ch}));}
+    else{const g=cl(vw*.02,16,32);let cw=Math.min(330,(Math.min(vw,1200)-40-2*g)/3),ch=Math.min(cw*4/3,avail);if(ch<cw*1.1)cw=ch/1.1;const x0=(vw-3*cw-2*g)/2,y0=hb+(avail-ch)/2;T=[0,1,2].map(k=>({x:x0+k*(cw+g),y:y0,w:cw,h:ch}));}
+    const m=ss(.14,.56,p),fl=ss(.5,.78,p);
+    for(const it of tiles){
+      const st=it.el.style,iin=reduce?1:ease((t-.05-it.dn*.55-it.id*.35)/1.05),q=1-iin;
+      const flipIn=0,fromCam=`translate3d(${q*it.ix}px,${q*it.iy}px,${q*it.iz}px) rotateX(${q*it.irx}deg) rotateY(${q*it.iry}deg) rotateZ(${q*it.irz}deg)`;
+      if(it.card===undefined){
+        const o=ss(.02+it.dn*.2+it.rr*.06,.26+it.dn*.2+it.rr*.06,p);
+        const fly=o*(vw*.35+vh*.2)*it.far;
+        st.transform=`translate3d(${it.x+it.dx*fly}px,${it.y+it.dy*fly+o*o*vh*.2}px,${o*it.far*1000}px) rotateX(${o*it.rx}deg) rotateY(${o*it.ry}deg) ${fromCam}`;
+        st.opacity=cl(iin*3)*(1-ss(.45,1,o));st.visibility=o>.99?'hidden':'';
+        continue;
+      }
+      const g=T[it.card],cw=lerp(w,g.w,m),ch=lerp(h,g.h,m),X=lerp(it.x+w/2,g.x+g.w/2,m)-cw/2,Y=lerp(it.y+h/2,g.y+g.h/2,m)-ch/2;
+      st.width=cw+'px';st.height=ch+'px';st.setProperty('--s',lerp(w,Math.min(g.w,g.h)*.9,m)+'px');
+      {const tz=vw<720?30:42,nx=Math.max(4,Math.round(g.w/tz)),ny=Math.max(3,Math.round(g.h/tz));st.setProperty('--tx',g.w/nx*2+'px');st.setProperty('--ty',g.h/ny*2+'px');}
+      st.transform=`translate3d(${X}px,${Y}px,0) rotateY(${fl*180}deg) ${fromCam}`;
+      st.opacity=cl(iin*3);st.zIndex=m>0?5:1;st.pointerEvents=fl>.9?'auto':'none';
+    }
+  }
+  requestAnimationFrame(frame);
+})();
+
+
+/* ---------- imágenes animadas ---------- */
+const RV_SEL='.pic,.r-photo,.hc-trio figure,.prod,.cap,.placa-wrap,.portrait';
+const rvIO=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){rvIO.unobserve(e.target);e.target.classList.add('in');}}),{threshold:.15,rootMargin:'0px 0px -5% 0px'});
+function armReveal(view){
+  if(REDUCE||!view)return;
+  view.querySelectorAll(RV_SEL).forEach(el=>{
+    if(el.classList.contains('rv')||el.closest('.ap')||(el.parentElement&&el.parentElement.closest('.rv')))return;
+    const sib=[...el.parentElement.children].filter(x=>x.matches(RV_SEL));
+    el.style.setProperty('--rd',(Math.max(0,sib.indexOf(el))*.13).toFixed(2)+'s');
+    el.classList.add('rv');rvIO.observe(el);
+  });
+}
+requestAnimationFrame(()=>{armReveal(document.querySelector(`[data-view="${current}"]`));});
+
+/* ---------- Ritual ---------- */
+const RITUAL=[
+ {img:'amb-skin-terrazo.jpg',n:'01 · Mañana',name:'Skin',color:'#9C4E57',tint:'#F3E6E1',
+  desc:'Péptidos de colágeno tipo I y III con resveratrol. Apoya la elasticidad, la firmeza y la hidratación de la piel desde dentro.',
+  ings:'Péptidos de colágeno tipo I y III · Resveratrol · NAD · Vitamina C · Biotina',
+  facts:[['900 g','pote'],['15 g','por porción'],['60','porciones'],['S/ 150','precio']],avail:true,
+  small:'La constancia hace la diferencia: los estudios con colágeno hidrolizado reportan mejoras a partir de las 8 a 12 semanas de consumo diario.'},
+ {img:'ritual-02-balance.jpg',n:'02 · Con las comidas',name:'Balance',color:'#6F8A4E',tint:'#EAEDE0',
+  desc:'Vinagre de manzana y fibra. Apoya la digestión saludable, la sensación de ligereza y el bienestar diario.',
+  ings:'Vinagre de manzana · Fibra',facts:[['450 g','pote']],avail:false,small:'Pensado para acompañar tus comidas.'},
+ {img:'amb-rest-lavanda.jpg',n:'03 · Noche',name:'Rest',color:'#6B5A92',tint:'#ECE7F0',
+  desc:'Cuatro formas de magnesio en un solo ritual. Apoya la relajación muscular, el descanso profundo y el equilibrio diario.',
+  forms:[['Bisglicinato','Relajación y calidad del sueño'],['L-treonato','Función cognitiva y concentración'],['Malato','Energía y menos cansancio'],['Citrato','Función muscular y tránsito intestinal']],
+  facts:[['450 g','pote'],['30','porciones'],['1,5 meses','de ritual'],['S/ 90','precio']],avail:true,
+  small:'Los tiempos en que se notan los beneficios son referenciales y varían según la persona.'}
+];
+const photo=$('rPhoto');
+RITUAL.forEach((r,i)=>{const im=new Image();im.src='img/'+r.img;im.alt='Ritual '+r.name;if(i)im.className='out';photo.appendChild(im);});
+function setStep(i){
+  const r=RITUAL[i],sec=$('ritual');
+  sec.style.setProperty('--tint',r.tint);sec.style.setProperty('--accent',r.color);
+  tileSwap(photo,()=>photo.querySelectorAll('img').forEach((im,k)=>im.classList.toggle('out',k!==i)));
+  $('rBar').style.transform=`translateX(${i*100}%)`;
+  $('rNum').textContent=r.n;$('rName').textContent=r.name;$('rDesc').textContent=r.desc;
+  $('rIngs').innerHTML=r.ings?`<b>Fórmula:</b> ${r.ings}`:'';
+  $('rExtra').innerHTML=r.forms?`<div class="forms">${r.forms.map(f=>`<div><b>${f[0]}</b><span>${f[1]}</span></div>`).join('')}</div>`:'';
+  $('rFacts').innerHTML=r.facts.map(f=>`<div><b>${f[0]}</b><span>${f[1]}</span></div>`).join('');
+  $('rCta').innerHTML=r.avail?`<a class="btn" href="#consulta">Pedir Ritual ${r.name}</a>`:`<span class="ph">Disponibilidad a confirmar</span>`;
+  $('rSmall').textContent=r.small;
+  document.querySelectorAll('.steps button').forEach((b,k)=>b.setAttribute('aria-pressed',k===i));
+}
+document.querySelectorAll('.steps button').forEach(b=>b.addEventListener('click',()=>setStep(+b.dataset.step)));
+setStep(0);
+
+/* ---------- Cápsulas ---------- */
+const CAPS=[
+ {name:'FLORA',in:'Complejo de probióticos',focus:'Microbiota intestinal y bienestar digestivo.',img:null},
+ {name:'VITA',in:'NMN + Coenzima Q10',focus:'Inspirada en la biología del envejecimiento: cómo las células producen y usan la energía.',img:'vita.jpg'},
+ {name:'SEDA',in:'Biotina + Ácido hialurónico + Vitamina C',focus:'Cuidado de la piel y el cabello.',img:'seda.jpg'}
+];
+$('capsGrid').innerHTML=CAPS.map(c=>`<article class="cap"><div class="pic${c.img?'':' empty'}">${c.img?`<img src="img/${c.img}" alt="Frasco ${c.name}" loading="lazy">`:'<span class="ph">Imagen pendiente</span>'}</div><span class="tag">En desarrollo</span><h3>${c.name}</h3><p><b>${c.in}</b>${c.focus}</p></article>`).join('');
+
+/* ---------- Ritual Kids ---------- */
+const KIDS={day:{t:'<em>Grow</em>, para el día',img:'kids-grow.jpg',d:'Multivitamínico en gomitas para la rutina de día. Un ritual diario para crecer fuerte y feliz.'},
+ night:{t:'<em>Dream</em>, para la noche',img:'kids-dream.jpg',d:'Gomitas con melatonina y extractos naturales para el momento de acostarse. Un ritual de noche para relajarse y descansar.'}};
+function setKids(k){const d=KIDS[k];$('kids').classList.toggle('night',k==='night');$('kTitle').innerHTML=d.t;$('kDesc').textContent=d.d;tileSwap($('kPic'),()=>{$('kImg').src='img/'+d.img;});$('kImg').alt='Frasco Ritual Kids';
+  document.querySelectorAll('.toggle button').forEach(b=>b.setAttribute('aria-pressed',b.dataset.k===k));}
+document.querySelectorAll('.toggle button').forEach(b=>b.addEventListener('click',()=>setKids(b.dataset.k)));
+setKids('day');
+
+/* ---------- Skincare ---------- */
+const FOAMS={grasa:['Piel grasa','Limpia y equilibra sin resecar','#9EC3E6','espuma-grasa.jpg'],
+ acneica:['Piel con tendencia acneica','Limpia y purifica sin irritar','#B9CF9A','espuma-acneica.jpg'],
+ seca:['Piel seca','Hidrata y limpia sin resecar','#F2A79C','espuma-seca.jpg'],
+ sensible:['Piel sensible','Calma y limpia sin irritar','#A6D7C8','espuma-sensible.jpg']};
+const SERUMS={peptidos:['Péptidos + Ácido hialurónico','Péptidos · Ácido hialurónico · Pantenol','#9AAAD8','serum-peptidos.jpg'],
+ vitc:['Vitamina C','Vitamina C · Ácido ferúlico · Vitamina E','#F0A274','serum-vitc.jpg'],
+ niacinamida:['Niacinamida','Niacinamida · Zinc PCA · Extracto de té verde','#A9C08A','serum-niacinamida.jpg'],
+ barrera:['Barrera reparadora','Ceramidas · Pantenol · Ácido hialurónico · Centella asiática','#8FA8D9','serum-barrera.jpg'],
+ tranexamico:['Ácido tranexámico','Ácido tranexámico · Niacinamida · Alfa arbutina','#F0A9A4','serum-tranexamico.jpg']};
+const NEEDS=[['hid','Deshidratada','peptidos'],['sen','Sensible o irritada','barrera'],['man','Con manchas','tranexamico'],['imp','Con imperfecciones','niacinamida'],['bri','Con brillo o poros','niacinamida'],['apa','Apagada','vitc'],['lin','Con líneas finas','peptidos']];
+const TYPES=[['seca','Seca'],['normal','Normal'],['mixta','Mixta'],['grasa','Grasa'],['nose','No lo sé']];
+const st={needs:new Set(['hid','sen']),type:'mixta'};
+$('needChips').innerHTML=NEEDS.map(([k,l,s])=>`<button class="chip" data-k="${k}" style="--c:${SERUMS[s][2]}"><i></i>${l}</button>`).join('');
+$('typeChips').innerHTML=TYPES.map(([k,l])=>`<button class="chip" data-k="${k}">${l}</button>`).join('');
+$('needChips').addEventListener('click',e=>{const b=e.target.closest('.chip');if(!b)return;const k=b.dataset.k;st.needs.has(k)?st.needs.delete(k):st.needs.add(k);paintSk();});
+$('typeChips').addEventListener('click',e=>{const b=e.target.closest('.chip');if(!b)return;st.type=b.dataset.k;paintSk();});
+function paintSk(){
+  const N=st.needs,T=st.type;
+  $('needChips').querySelectorAll('.chip').forEach(b=>b.setAttribute('aria-pressed',N.has(b.dataset.k)));
+  $('typeChips').querySelectorAll('.chip').forEach(b=>b.setAttribute('aria-pressed',T===b.dataset.k));
+  const names=NEEDS.filter(n=>N.has(n[0])).map(n=>n[1].toLowerCase());
+  const tName=TYPES.find(t=>t[0]===T)[1].toLowerCase();
+  $('fFor').textContent=names.length?`Para una piel ${T==='nose'?'':tName+' '}que hoy se siente ${names.length>1?names.slice(0,-1).join(', ')+' y '+names.at(-1):names[0]}.`:'Marca cómo sientes tu piel hoy.';
+  let fk;if(N.has('sen'))fk='sensible';else if(N.has('imp'))fk='acneica';else if(T==='grasa'||T==='mixta'||(T==='nose'&&N.has('bri')))fk='grasa';else if(T==='seca')fk='seca';else fk='sensible';
+  const f=FOAMS[fk],sk=[...new Set(NEEDS.filter(n=>N.has(n[0])).map(n=>n[2]))],pick=sk.slice(0,2);
+  $('fFoam').innerHTML=`Espuma facial · ${f[0]}<small>${f[1]}${fk==='sensible'&&!N.has('sen')?' · la más delicada de la línea':''}</small>`;
+  $('fSerum').innerHTML=pick.length?pick.map((k,i)=>`Sérum ${SERUMS[k][0]}<small>${i?'Complemento · ':''}${SERUMS[k][1]}</small>`).join('<br>'):'A definir contigo<small>Cuéntanos qué te gustaría mejorar</small>';
+  $('fPicks').innerHTML=[f[3]].concat(pick.map(k=>SERUMS[k][3])).map(s=>`<div><img src="img/${s}" alt=""></div>`).join('');
+  const adj=[];
+  if(N.has('sen'))adj.push('Revisar las concentraciones para que tu piel tolere bien los activos');
+  if(N.has('sen')&&pick.includes('vitc'))adj.push('Introducir la vitamina C de forma progresiva');
+  if(N.has('hid')&&(T==='grasa'||T==='mixta'||N.has('bri')))adj.push('Una textura más ligera, para hidratar sin sumar brillo');
+  if(N.has('hid')&&T==='seca')adj.push('Una textura más nutritiva para el sérum');
+  if(sk.length>2)adj.push('Empezar con dos sérums y sumar '+SERUMS[sk[2]][0]+' más adelante');
+  if(T==='nose')adj.push('Te ayudamos a identificar tu tipo de piel antes de elegir');
+  if(!adj.length)adj.push('Tu caso encaja con fórmulas de la línea, sin ajustes por ahora');
+  $('fAdj').innerHTML=adj.map(a=>`<li>${a}</li>`).join('');
+  let fl='';if(N.has('man'))fl+=`<p class="flag">Si una mancha es persistente o cambió de forma o color, conviene consultarla en la <a href="#farmacia">Farmacia</a>.</p>`;
+  if(N.has('imp'))fl+=`<p class="flag">Si el acné es persistente o deja marcas, te orientamos mejor desde la <a href="#farmacia">Farmacia</a>.</p>`;
+  $('fFlag').innerHTML=fl;
+  $('fNo').textContent=(pick.length+1)+(pick.length?' productos':' producto');
+  $('fOk').innerHTML='';
+}
+paintSk();
+$('fSend').addEventListener('click',()=>{$('fForm').hidden=false;$('fSend').hidden=true;$('fName').focus();});
+$('fForm').addEventListener('submit',e=>{e.preventDefault();$('fForm').hidden=true;$('fSend').hidden=false;
+  $('fOk').innerHTML=`<p class="ok">Prototipo: en la web real, tu fórmula y tu contacto llegarían a JOVAN para revisarlos contigo.</p>`;});
+const prod=(p,kind)=>`<article class="prod" style="--c:${p[2]}"><div class="pic"><img src="img/${p[3]}" alt="${kind} ${p[0]}" loading="lazy"></div><i></i><h4>${p[0]}</h4><p>${p[1]}</p></article>`;
+$('foamGrid').innerHTML=Object.values(FOAMS).map(f=>prod(f,'Espuma facial')).join('');
+$('serumGrid').innerHTML=Object.values(SERUMS).map(s=>prod(s,'Sérum')).join('');
+
+/* ---------- Farmacia ---------- */
+const TOPICS=[
+ {k:'caspa',t:'Caspa y cuero cabelludo',can:'Preparamos un shampoo o una loción según lo que notas: descamación, picor o exceso de grasa.',pres:['Shampoo','Loción para cuero cabelludo'],med:'Si hay enrojecimiento intenso, heridas o no mejora, te recomendamos una evaluación médica.'},
+ {k:'caida',t:'Caída del cabello',can:'Si te interesa el minoxidil u otra opción, te explicamos cómo se prepara y si necesitas una receta.',pres:['Loción capilar','Shampoo complementario'],med:'Una caída repentina o en zonas concretas conviene evaluarla con un médico.'},
+ {k:'acne',t:'Acné',can:'Te explicamos qué opciones hay desde la farmacia y cuáles necesitan prescripción.',pres:['Gel','Loción','Crema'],med:'Muchos tratamientos para el acné requieren receta. Te orientamos sobre el paso a seguir.'},
+ {k:'manchas',t:'Manchas',can:'Valoramos qué tipo de fórmula puede ayudarte a unificar el tono y cómo usarla con protección solar.',pres:['Crema','Sérum','Gel'],med:'Un lunar o una mancha que cambia de forma, color o tamaño debe verlo un médico.'},
+ {k:'unas',t:'Cambios en las uñas',can:'Según lo que observes, te orientamos sobre una solución o laca para uñas.',pres:['Solución para uñas','Laca'],med:'Si el cambio persiste o se extiende a otras uñas, conviene una evaluación médica.'},
+ {k:'otras',t:'Jarabes, pastas dentales y otras',can:'También preparamos otras formas farmacéuticas a partir de una prescripción.',pres:['Jarabes','Pastas dentales','Otras según receta'],med:'Para estas preparaciones solemos partir de una receta. Si no la tienes, cuéntanos tu caso.'}
+];
+let topic='caspa';
+$('tiles').innerHTML=TOPICS.map(t=>`<button class="chip" data-k="${t.k}">${t.t}</button>`).join('');
+$('faTopic').innerHTML=TOPICS.map(t=>`<option value="${t.k}">${t.t}</option>`).join('')+'<option value="receta">Preparación con receta</option><option value="otro">Otro tema</option>';
+function paintTopic(){
+  const t=TOPICS.find(x=>x.k===topic);
+  $('tiles').querySelectorAll('.chip').forEach(b=>b.setAttribute('aria-pressed',b.dataset.k===topic));
+  $('case').innerHTML=`<div><h4>Desde la farmacia</h4><p class="big">${t.can}</p></div><div><h4>Presentaciones habituales</h4><ul>${t.pres.map(p=>`<li>${p}</li>`).join('')}</ul></div><div><h4>Cuándo ver a un médico</h4><p class="med">${t.med}</p><p style="margin-top:1.2rem"><a class="link" href="#consulta" data-topic="${t.k}">Consultar sobre esto <i>→</i></a></p></div>`;
+}
+$('tiles').addEventListener('click',e=>{const b=e.target.closest('.chip');if(b){topic=b.dataset.k;paintTopic();}});
+$('case').addEventListener('click',e=>{const a=e.target.closest('[data-topic]');if(a){$('faTopic').value=a.dataset.topic;setMode('duda');}});
+paintTopic();
+function setMode(m){
+  document.querySelectorAll('.seg button').forEach(b=>b.setAttribute('aria-pressed',b.dataset.m===m));
+  $('faFileWrap').hidden=m!=='receta';if(m==='receta')$('faTopic').value='receta';
+  $('faMsgLabel').textContent=m==='receta'?'¿Algo que debamos saber de tu receta?':'Qué notas y desde cuándo';
+  $('faMsg').placeholder=m==='receta'?'Ej.: Mi dermatóloga me indicó una loción de minoxidil.':'Ej.: Tengo caspa hace meses y los shampoos de farmacia no me funcionan.';
+}
+document.querySelectorAll('.seg button').forEach(b=>b.addEventListener('click',()=>setMode(b.dataset.m)));
+document.querySelectorAll('.fa-hero [data-mode]').forEach(a=>a.addEventListener('click',()=>setMode(a.dataset.mode)));
+$('faForm').addEventListener('submit',e=>{e.preventDefault();
+  $('faOk').innerHTML=`<p class="ok">Prototipo: en la web real, esta consulta llegaría a la farmacia y te responderíamos por el contacto que indicaste.</p>`;});
+})();
+</script>
